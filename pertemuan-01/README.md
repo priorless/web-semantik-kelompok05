@@ -38,10 +38,12 @@ Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universit
 
 ## 3. Eksplorasi Scema.org
 
+ Dalam langkah mengidentifikasi properti yang sesuai, kami melakukan eksplorasi standar Schema.org untuk mendeskripsikan entitas perguruan tinggi. Berdasarkan eksplorasi tersebut, berikut 5 properti yang dipilih beserta fungsi dan contoh nilainya.
+
 | Property | Fungsi | Contoh Nilai |
 | -------- | ------ | ------------ |
 | legalName | Nama resmi organisasi, misalnya nama perusahaan yang terdaftar. | Universitas Sumatra Utara |
 | slogan | Slogan atau motto yang terkait dengan universitas tersebut. | The Era of Ultimate Excellence |
-| hasMap | URL menuju peta tempat tersebut. | https://maps.app.goo.gl/4N7okRoeWvFmCgAY9 |
+| location | Tempat suatu peristiwa terjadi, tempat suatu organisasi berada, atau tempat suatu tindakan berlangsung. | Jl. Dr. T. Mansur No. 9, Kampus Padang Bulan, Medan, 20155, Sumatera Utara |
 | hasCredential | kredensial yang diberikan kepada Individu atau Organisasi. | Akreditasi Unggul (BAN-PT) |
 | alumni | Alumni suatu organisasi. | Tengku Erry Nuradi |
