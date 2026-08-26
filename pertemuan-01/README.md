@@ -18,3 +18,19 @@ Informasi yang diperoleh adalah sebagai berikut:
 - **Website:** https://www.usu.ac.id/
   
 Informasi lain yang menarik adalah bahwa Universitas Sumatera Utara juga dikenal dengan singkatan (USU), memiliki nama dalam bahasa Inggris University of North Sumatra, dan termasuk dalam kategori universitas.
+
+## 2. Entitas, Atribut, dan Relasi
+
+Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universitas Sumatera Utara dapat dikelompokkan menjadi entitas, atribut, dan relasi sebagai berikut.
+
+| Informasi | Jenis |
+|---|---|
+| Universitas Sumatera Utara | Entitas |
+| Indonesia | Entitas |
+| Medan | Entitas |
+| Tahun berdiri | Atribut |
+| Webstite resmi | Atribut |
+| Deskripsi universitas | Atribut |
+| Singkatan USU | Atribut |
+| Universitas Sumatera Utara → located in → Medan | Relasi |
+| Universitas Sumatera Utara → country → Indonesia | Relasi |
