@@ -1,9 +1,9 @@
 # web-semantik-kelompok05
 
 
-#[Pertemuan 1] - Pengenalan Web Semantik
+# [Pertemuan 1] - Pengenalan Web Semantik
  
- ##1. Eksplorasi Wikidata
+ ## 1. Eksplorasi Wikidata
 
 Pada langkah ini, saya melakukan pencarian entitas **Universitas Sumatera Utara** melalui Wikidata. Berdasarkan informasi yang ditemukan, entitas tersebut memiliki identifier unik Q4200341. Identifier ini digunakan untuk membedakan Universitas Sumatera Utara dari entitas lain yang mungkin memiliki nama yang sama atau berbeda.
 
