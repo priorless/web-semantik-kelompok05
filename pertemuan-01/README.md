@@ -42,9 +42,9 @@ Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universit
 
 | Property | Fungsi | Contoh Nilai |
 | -------- | ------ | ------------ |
-| legalName | Nama resmi universitas yang terdaftar. | Universitas Sumatra Utara |
+| legalName | Nama resmi universitas yang terdaftar. | Universitas Sumatera Utara |
 | slogan | Slogan atau motto yang terkait dengan universitas tersebut. | The Era of Ultimate Excellence |
-| address | alamat dimana suatu universitas terkait berada. | Jl. Dr. T. Mansur No. 9, Kampus Padang Bulan, Medan, 20155, Sumatera Utara |
-| hasCredential | kredensial atau akreditasi yang diberikan kepada universitas. | Akreditasi Unggul (BAN-PT) |
+| address | Alamat dimana suatu universitas terkait berada. | Jl. Dr. T. Mansur No. 9, Kampus Padang Bulan, Medan, 20155, Sumatera Utara |
+| hasCredential | Kredensial atau akreditasi yang diberikan kepada universitas. | Akreditasi Unggul (BAN-PT) |
 | foundingDate | Tanggal berdirinya universitas. | 4 Juni 1952 |
 | alumni | Alumni suatu universitas. | Tengku Erry Nuradi |
