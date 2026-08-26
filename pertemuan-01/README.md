@@ -5,7 +5,7 @@
  
  ## 1. Eksplorasi Wikidata
 
-Pada langkah ini, saya melakukan pencarian entitas **Universitas Sumatera Utara** melalui Wikidata. Berdasarkan informasi yang ditemukan, entitas tersebut memiliki identifier unik Q4200341. Identifier ini digunakan untuk membedakan Universitas Sumatera Utara dari entitas lain yang mungkin memiliki nama yang sama atau berbeda.
+Pada langkah ini, kami melakukan pencarian entitas **Universitas Sumatera Utara** melalui Wikidata. Berdasarkan informasi yang ditemukan, entitas tersebut memiliki identifier unik Q4200341. Identifier ini digunakan untuk membedakan Universitas Sumatera Utara dari entitas lain yang mungkin memiliki nama yang sama atau berbeda.
 
 Informasi yang diperoleh adalah sebagai berikut:
 
