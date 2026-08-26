@@ -1,4 +1,4 @@
-# web-semantik-kelompok05
+# Web-Semantik-Kelompok05
 
 
 # [Pertemuan 1] - Pengenalan Web Semantik
