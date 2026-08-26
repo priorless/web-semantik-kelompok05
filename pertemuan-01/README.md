@@ -23,17 +23,17 @@ Informasi lain yang menarik adalah bahwa Universitas Sumatera Utara juga dikenal
 
 Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universitas Sumatera Utara dapat dikelompokkan menjadi entitas, atribut, dan relasi sebagai berikut.
 
-| Informasi | Jenis |
-|---|---|
-| Universitas Sumatera Utara | Entitas |
-| Indonesia | Entitas |
-| Medan | Entitas |
-| Tahun berdiri | Atribut |
-| Webstite resmi | Atribut |
-| Deskripsi universitas | Atribut |
-| Singkatan USU | Atribut |
-| Universitas Sumatera Utara → located in → Medan | Relasi |
-| Universitas Sumatera Utara → country → Indonesia | Relasi |
+| Informasi | Jenis | Alasan |
+|---|---|---|
+| Universitas Sumatera Utara | Entitas | Objek utama yang memiliki identitas unik di Wikidata, yaitu Q4200341 |
+| Indonesia | Entitas | Negara yang memiliki identitas dan dapat dibedakan dari negara lain |
+| Medan | Entitas | Wilayah atau lokasi yang memiliki identitas tersendiri |
+| Tahun berdiri | Atribut | Informasi yang menjelaskan kapan Universitas Sumatera Utara didirikan |
+| Website resmi | Atribut | Informasi yang menunjukkan alamat situs resmi Universitas Sumatera Utara |
+| Deskripsi universitas | Atribut | Informasi yang menjelaskan Universitas Sumatera Utara sebagai universitas negeri di Sumatera Utara, Indonesia |
+| Singkatan USU | Atribut | Informasi yang menjelaskan bentuk singkat dari Universitas Sumatera Utara | |
+| Universitas Sumatera Utara → located in → Medan | Relasi | Menunjukkan hubungan antara Universitas Sumatera Utara dengan Medan sebagai lokasi universitas |
+| Universitas Sumatera Utara → country → Indonesia | Relasi | Menunjukkan hubungan antara Universitas Sumatera Utara dengan Indonesia sebagai negara tempat universitas berada |
 
 
 ## 3. Eksplorasi Scema.org
