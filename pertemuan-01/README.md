@@ -23,7 +23,7 @@ Informasi lain yang menarik adalah bahwa Universitas Sumatera Utara juga dikenal
 
 Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universitas Sumatera Utara dapat dikelompokkan menjadi entitas, atribut, dan relasi sebagai berikut.
 
-| Informasi | Jenis | Alasan |
+| Informasi | Kategori | Alasan |
 |---|---|---|
 | Universitas Sumatera Utara | Entitas | Objek utama yang memiliki identitas unik di Wikidata, yaitu Q4200341 |
 | Indonesia | Entitas | Negara yang memiliki identitas dan dapat dibedakan dari negara lain |
