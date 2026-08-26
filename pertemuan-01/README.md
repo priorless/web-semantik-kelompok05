@@ -34,3 +34,14 @@ Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universit
 | Singkatan USU | Atribut |
 | Universitas Sumatera Utara → located in → Medan | Relasi |
 | Universitas Sumatera Utara → country → Indonesia | Relasi |
+
+
+## 3. Eksplorasi Scema.org
+
+| Property | Fungsi | Contoh Nilai |
+| -------- | ------ | ------------ |
+| legalName | Nama resmi organisasi, misalnya nama perusahaan yang terdaftar. | Universitas Sumatra Utara |
+| slogan | Slogan atau motto yang terkait dengan universitas tersebut. | The Era of Ultimate Excellence |
+| hasMap | URL menuju peta tempat tersebut. | https://maps.app.goo.gl/4N7okRoeWvFmCgAY9 |
+| hasCredential | kredensial yang diberikan kepada Individu atau Organisasi. | Akreditasi Unggul (BAN-PT) |
+| alumni | Alumni suatu organisasi. | Tengku Erry Nuradi |
