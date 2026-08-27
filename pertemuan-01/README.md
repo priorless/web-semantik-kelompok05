@@ -14,7 +14,7 @@ Informasi yang diperoleh adalah sebagai berikut:
 - **Deskripsi:** Universitas negeri di Sumatera Utara, Indonesia.
 - **Negara:** Indonesia
 - **Lokasi:** Medan, Sumatera Utara
-- **Tahun berdiri:** 20 November 1957
+- **Tahun berdiri:** 4 Juni 1952
 - **Website:** https://www.usu.ac.id/
   
 Informasi lain yang menarik adalah bahwa Universitas Sumatera Utara juga dikenal dengan singkatan (USU), memiliki nama dalam bahasa Inggris University of North Sumatra, dan termasuk dalam kategori universitas.
