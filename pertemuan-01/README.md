@@ -53,23 +53,24 @@ Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universit
 
 1. Apa perbedaan web tradisional dan Web Semantik?
 Jawaban:
-Menurut kami, web tradisional lebih berfokus pada penyajian informasi agar mudah dibaca oleh manusia. Sedangkan Web Semantik tidak hanya menampilkan informasi, tetapi juga menjelaskan makna dan hubungan dari informasi tersebut agar dapat dipahami oleh komputer.
+Menurut kami, web tradisional itu lebih banyak berisi halaman atau dokumen yang dibuat untuk dibaca oleh manusia. Sedangkan Web Semantik membuat informasi menjadi lebih jelas dengan memberikan makna dan hubungan antar data, sehingga komputer juga bisa memproses dan memahaminya.
 
 2. Mengapa entitas membutuhkan identifier unik?
 Jawaban:
-Identifier unik diperlukan agar suatu entitas tidak tertukar dengan entitas lain. Hal ini karena nama suatu entitas bisa saja sama atau memiliki penulisan yang berbeda. Dengan adanya identifier, sistem dapat mengetahui dengan pasti entitas yang dimaksud.
+Identifier unik dibutuhkan agar suatu entitas tidak tertukar dengan entitas lain. Soalnya, satu nama bisa saja memiliki arti yang berbeda. Dengan adanya identifier, komputer bisa mengetahui dengan jelas entitas mana yang sebenarnya sedang dibahas.
 
 3. Jelaskan subject, predicate, dan object.
 Jawaban:
-Subject adalah sesuatu yang sedang dibahas, predicate adalah hubungan atau informasi tentang subject, sedangkan object adalah hasil atau tujuan dari hubungan tersebut.
+Subject adalah sesuatu yang sedang dibicarakan. Predicate adalah hubungan atau keterangan dari subject, sedangkan object adalah sesuatu yang berhubungan dengan subject tersebut.
+
 Contohnya:
-Universitas Sumatera Utara → berada di → Medan
-Pada contoh tersebut, Universitas Sumatera Utara adalah subject, berada di adalah predicate, dan Medan adalah object.
+Medan → terletakDi → Sumatera Utara
+Pada contoh tersebut, Medan adalah subject, terletakDi adalah predicate, dan Sumatera Utara adalah object.
 
 4. Apa keuntungan hubungan antarentitas?
 Jawaban:
-Keuntungannya ialah dengan menghubungkan satu informasi dengan informasi lainnya, data menjadi lebih jelas dan teratur. Komputer juga lebih mudah mengetahui hubungan antar informasi dan mencari data yang saling berkaitan dibandingkan jika informasi hanya ditulis sebagai teks biasa.
+Keuntungannya ialah dengan adanya hubungan antarentitas, informasi jadi lebih mudah dipahami dan tidak berdiri sendiri. Hubungan tersebut juga bisa membantu komputer menemukan atau menyimpulkan informasi lain. Misalnya, jika Medan berada di Sumatera Utara dan Sumatera Utara berada di Indonesia, maka dapat diketahui bahwa Medan juga berada di Indonesia.
 
-6. Bagaimana Knowledge Graph membantu AI?
+5. Bagaimana Knowledge Graph membantu AI?
 Jawaban:
-Menurut kami, Knowledge Graph membantu AI karena informasi disusun dalam bentuk entitas yang saling berhubungan. Dengan begitu, AI dapat lebih mudah memahami hubungan antar informasi dan memberikan jawaban yang lebih sesuai dengan informasi yang tersedia.
+Menurut kami, Knowledge Graph membantu AI karena informasi di dalamnya sudah disusun sebagai fakta-fakta yang saling berhubungan. Jadi, AI bisa lebih mudah memahami hubungan antar informasi dan menggunakan fakta tersebut untuk memberikan jawaban yang lebih tepat.
