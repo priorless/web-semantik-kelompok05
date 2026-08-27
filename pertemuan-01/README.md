@@ -48,3 +48,28 @@ Berdasarkan informasi yang diperoleh dari Wikidata, informasi mengenai Universit
 | hasCredential | Kredensial atau akreditasi yang diberikan kepada universitas. | Akreditasi Unggul (BAN-PT) |
 | foundingDate | Tanggal berdirinya universitas. | 4 Juni 1952 |
 | alumni | Alumni suatu universitas. | Tengku Erry Nuradi |
+
+## 4. Pertanyaan Evaluasi
+
+1. Apa perbedaan web tradisional dan Web Semantik?
+Jawaban:
+Menurut kami, web tradisional lebih berfokus pada penyajian informasi agar mudah dibaca oleh manusia. Sedangkan Web Semantik tidak hanya menampilkan informasi, tetapi juga menjelaskan makna dan hubungan dari informasi tersebut agar dapat dipahami oleh komputer.
+
+2. Mengapa entitas membutuhkan identifier unik?
+Jawaban:
+Identifier unik diperlukan agar suatu entitas tidak tertukar dengan entitas lain. Hal ini karena nama suatu entitas bisa saja sama atau memiliki penulisan yang berbeda. Dengan adanya identifier, sistem dapat mengetahui dengan pasti entitas yang dimaksud.
+
+3. Jelaskan subject, predicate, dan object.
+Jawaban:
+Subject adalah sesuatu yang sedang dibahas, predicate adalah hubungan atau informasi tentang subject, sedangkan object adalah hasil atau tujuan dari hubungan tersebut.
+Contohnya:
+Universitas Sumatera Utara → berada di → Medan
+Pada contoh tersebut, Universitas Sumatera Utara adalah subject, berada di adalah predicate, dan Medan adalah object.
+
+4. Apa keuntungan hubungan antarentitas?
+Jawaban:
+Keuntungannya ialah dengan menghubungkan satu informasi dengan informasi lainnya, data menjadi lebih jelas dan teratur. Komputer juga lebih mudah mengetahui hubungan antar informasi dan mencari data yang saling berkaitan dibandingkan jika informasi hanya ditulis sebagai teks biasa.
+
+6. Bagaimana Knowledge Graph membantu AI?
+Jawaban:
+Menurut kami, Knowledge Graph membantu AI karena informasi disusun dalam bentuk entitas yang saling berhubungan. Dengan begitu, AI dapat lebih mudah memahami hubungan antar informasi dan memberikan jawaban yang lebih sesuai dengan informasi yang tersedia.
