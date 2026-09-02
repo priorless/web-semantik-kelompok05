@@ -2,9 +2,9 @@
 
 | No | Bagian yang Salah | Alasan | Perbaikan |
 |---|---|---|---|
-| 1 | `<nama> Budi Santoso </Nama>` | XML bersifat case-sensitive, tag pembuka menggunakan huruf kecil `<nama>` sedangkan tag penutup menggunakan huruf besar `</Nama>` | ubah tag penutup sehingga menjadi `<nama>Budi Santoso</nama>` |
+| 1 | `<nama> Budi Santoso </Nama>` | XML bersifat case-sensitive, tag pembuka menggunakan huruf kecil `<nama>` sedangkan tag penutup menggunakan huruf besar `</Nama>` | Ubah tag penutup sehingga menjadi `<nama>Budi Santoso</nama>` |
 | 2 | `<angkatan>2024` |  Elemen `<angkatan>` tidak memiliki tag penutup | Tambahkan tag menutup `</angkatan>` sehingga menjadi `<angkatan>2024</angkatan>` |
-| 3 | `Saya suka AI & Web Semantik` | Simbol `&` tidak boleh ditulis langsung di XML karena termasuk karakter khusus. Jadi, tanda tersebut harus ditulis sebagai `&amp;` supaya XML bisa dibaca dengan benar.  | Ubah menjadi Saya suka AI `&amp;` Web Semantik |
+| 3 | `Saya suka AI & Web Semantik` | Simbol `&` tidak boleh ditulis langsung di XML karena termasuk karakter khusus. Jadi, tanda tersebut harus ditulis sebagai `&amp;` supaya XML bisa dibaca dengan benar.  | Ubah menjadi `Saya suka AI `&amp;` Web Semantik` |
 
 ## 3. Analisis XML Schema
 
