@@ -32,7 +32,7 @@ Atribut isbn tidak boleh dihilangkan. atribut ini bersifat wajib karena memiliki
 jawaban: 
 Kedua elemen tidak dianggap sama karena masing-masing terikat pada namespace unik yang berbeda, sehingga mewakili konteks data yang berbeda secara makna.
 
-2.Apa fungsi prefix buku: dan web:?
+2. Apa fungsi prefix buku: dan web:?
 jawaban:
 Berfungsi sebagai penanda ringkas (alias) untuk membedakan elemen dengan nama sama yang berasal dari konteks/kosakata berbeda.
 
@@ -45,7 +45,7 @@ jawaban:
 Tidak harus. URI dalam namespace hanya berfungsi sebagai pengenal unik (unique identifier) berbasis teks untuk mencegah bentrokan nama, bukan sebagai lokasi link web fisik yang harus diakses.
 
 
-Atribut isbn tidak boleh dihilangkan. atribut ini bersifat wajib karena memmiliki atribut use='required" pada XSD. 
+
 
 
 ## Pertanyaan Evaluasi
