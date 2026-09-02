@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Profil mahasiswa Web Semantik -->
+
+<profil nim="251402137">
+    <nama>Quinsha Ilmi Azzahra</nama>
+    <angkatan>2024</angkatan>
+    <programStudi>Teknologi Informasi</programStudi>
+
+    <hobi>Menggambar/Melukis</hobi>
+    <hobi>Menonton film</hobi>
+
+    <deskripsi>
+        Saya adalah mahasiswa Program Studi Teknologi Informasi yang tertarik
+        mempelajari teknologi dan pengembangan sistem informasi.
+    </deskripsi>
+</profil>
