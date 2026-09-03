@@ -1,3 +1,17 @@
+## 1. Profil XML
+
+Struktur XML profil mahasiswa tersebut terdiri dari:
+- `<profil>` sebagai elemen utama (*root elemen*) yang membungkus seluruh data mahasiswa.
+- Atribut `nim` pada elemen `<profil>` digunakan untuk menyimpan Nomor Induk Mahasiswa.
+- `nama` digunakan untuk menyimpan nama mahasiswa.
+- `<angkatan>` digunakan untuk menunjukkan tahun angkatan mahasiswa.
+- `<programStudi>` digunakan untuk menyimpan informasi program studi.
+- `<hobi>` digunakan untuk menyimpan data hobi.
+- `<deskripsi>` digunakan untuk memberikan informasi singkat mengenai mahasiswa.
+
+Seluruh elemen disusun dengan teratur di dalam elemen `<profil>`. Setiap tag pembuka dan penutup juga ditulis dengan sesuai sehingga dokumen XML tersebut memenuhi syarat *well-formed*.
+
+
 ## 2. Analisis Kesalahan XML
 
 | No | Bagian yang Salah | Alasan | Perbaikan |
