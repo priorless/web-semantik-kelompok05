@@ -1,74 +1,60 @@
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://usu.ac.id/mhs/251402",
-  "name": "Indah Ayu Gemilang",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Universitas Sumatera Utara"
-  },
-  "knowsAbout": [
-    "ISI_TOPIK_PERTAMA",
-    "ISI_TOPIK_KEDUA"
-  ]
-}
-
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://usu.ac.id/mhs/251402040",
-  "name": "Dian Indriani",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Universitas Sumatera Utara"
-  },
-  "knowsAbout": [
-    "ISI_TOPIK_PERTAMA",
-    "ISI_TOPIK_KEDUA"
-  ]
-}
-
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://usu.ac.id/mhs/251402131",
-  "name": "Keizya Azalea Azka",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Universitas Sumatera Utara"
-  },
-  "knowsAbout": [
-    "ISI_TOPIK_PERTAMA",
-    "ISI_TOPIK_KEDUA"
-  ]
-}
-
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://usu.ac.id/mhs/251402137",
-  "name": "Quinsha Ilmi Azzahra",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Universitas Sumatera Utara"
-  },
-  "knowsAbout": [
-    "ISI_TOPIK_PERTAMA",
-    "ISI_TOPIK_KEDUA"
-  ]
-}
-
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://usu.ac.id/mhs/251402",
-  "name": "Jihan Fadila",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Universitas Sumatera Utara"
-  },
-  "knowsAbout": [
-    "ISI_TOPIK_PERTAMA",
-    "ISI_TOPIK_KEDUA"
+  "@graph": [
+    {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://usu.ac.id",
+      "name": "Universitas Sumatera Utara"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://usu.ac.id/mhs/251402087",
+      "name": "Indah Ayu Gemilang",
+      "alumniOf": { "@id": "https://usu.ac.id" },
+      "knowsAbout": [
+        "Machine Learning",
+        "Data Analysis"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://usu.ac.id/mhs/251402040",
+      "name": "Dian Indriani",
+      "alumniOf": { "@id": "https://usu.ac.id" },
+      "knowsAbout": [
+        "Software Engineering",
+        "Web Development"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://usu.ac.id/mhs/251402131",
+      "name": "Keizya Azalea Azka",
+      "alumniOf": { "@id": "https://usu.ac.id" },
+      "knowsAbout": [
+        "Network Security",
+        "Ethical Hacking"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://usu.ac.id/mhs/251402137",
+      "name": "Quinsha Ilmi Azzahra",
+      "alumniOf": { "@id": "https://usu.ac.id" },
+      "knowsAbout": [
+        "Python Programming",
+        "React.js"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://usu.ac.id/mhs/251402098",
+      "name": "Jihan Fadhilah",
+      "alumniOf": { "@id": "https://usu.ac.id" },
+      "knowsAbout": [
+        "UI/UX Design",
+        "Human-Computer Interaction"
+      ]
+    }
   ]
 }

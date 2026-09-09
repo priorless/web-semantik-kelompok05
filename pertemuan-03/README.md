@@ -6,10 +6,12 @@
 
 ## 1. JSON Biasa dan JSON-LD
 1. Apa perbedaan fungsi antara pasangan nama/pekerjaan dan name/jobTitle?
-jawaban: nama dan pekerjaan tidak menggunakan keyword yang tersedia di scema, sedangan name/jobTitle merupakan suatu properti yang memang sesuai dengan scema.
+jawaban: Nama dan pekerjaan merupakan pasangan kunci-nilai lokal yang hanya dipahami secara internal, sedangan name/jobTitle merupakan suatu properti yang terhubung ke kosakata global Schema.org.
+
 2. Apa fungsi @context, @type, dan @id?
-jawaban: @context: untuk mem
-@type: sebuah kunci untuk menentukan apa objek yang sedang dibahas. contoh place, person, dll.
-@id
+jawaban: @context: Memetakan istilah/kunci lokal ke URI/IRI kosakata standar global
+@type: Menentukan tipe entitas objek yang sedang dibahas. Contoh place, person, dll.
+@id: Menjadi pengenal unik berformat IRI/URI untuk node tersebut di tingkat web.
+
 3. Apa yang terjadi pada sebuah node jika tidak memiliki @id?
-jawaban: @id digunakan sebagai kunci atau key, jika sebuah node tidak memiliki @id, maka node tersebut dianggap sebagai node kosong. 
+jawaban:Jika sebuah node tidak memiliki @id, maka node tersebut dianggap sebagai node kosong. Datanya tetap valid, tetapi entitas tersebut tidak dapat dirujuk secara langsung dari luar. 
