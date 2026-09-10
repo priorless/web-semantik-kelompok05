@@ -16,6 +16,16 @@ jawaban: @context: Memetakan istilah/kunci lokal ke URI/IRI kosakata standar glo
 3. Apa yang terjadi pada sebuah node jika tidak memiliki @id?
 jawaban:Jika sebuah node tidak memiliki @id, maka node tersebut dianggap sebagai node kosong. Datanya tetap valid, tetapi entitas tersebut tidak dapat dirujuk secara langsung dari luar. 
 
+## 2. Pemeriksaan schema.org
+1. Alasan memilih tipe paling spesifik:
+   Tipe yang spesifik digunakan supaya informasi yang diberikan tidak terlalu umum dan dapat menggambarkan entitas dengan lebih tepat. Contohnya, mahasiswa lebih sesuai menggunakan `Person`, sedangkan universitas menggunakan `CollegeUniversity`.
+
+2. Nama properti dan bahasa nilai:
+   Nama properti harus mengikuti yang tersedia dia *schema.org* karena properti tersebut sudah menjadi standar untuk menjelaskan suatu data. Untuk nilainya, kita bisa menggunakan bahasa Indonesia karena nilai tersebut merupakan isi atau informasi dari properti tersebut.
+
+3. Manfaat array pada `knowsAbout`:
+   Penggunaan array membuat satu properti dapat memiliki beberapa nilai sekaligus. Hal ini berguna untuk mencamtumkan berbagai pengetahuan atau keahlian yang dimiliki, seperti `["Web Semantik", "Manajemen Basis Data", "Pemrograman Berorientasi Objek"]`.
+   
 ## 3. Perbaikan Lima Kesalahan
 | No. | Bagian Salah | Alasan | Perbaikan |
 |---|---|---|---|
