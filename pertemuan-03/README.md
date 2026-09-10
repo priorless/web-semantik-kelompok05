@@ -28,3 +28,14 @@ Tuliskan satu baris N-Quads yang terbentuk:
 - Schema Markup Validator: 5 item `Person` terdeteksi, tidak ada kesalahan dan tidak ada peringatan.
 - Rich Results Test: 1 item valid terdeteksi. Data terstruktur yang terdeteksi adalah `Acara`. Masalah non-kritis terdeteksi.
 - JSON-LD Playground: N-Quads berhasil terbentuk.
+
+## 6. Refleksi
+
+1. Mengapa `@context` disebut jembatan menuju makna?  
+   Karena `@context` menghubungkan data yang kita tulis dengan kosakata yang memiliki makna, seperti `schema.org`. Jadi, data yang awalnya hanya berupa teks dapat dipahami maksudnya.
+
+2. Apa perbedaan fungsi Schema Markup Validator dan Rich Results Test?  
+   Schema Markup Validator digunakan untuk mengecek apakah tipe dan properti yang digunakan sudah sesuai dengan `schema.org`. Sementara itu, Rich Results Test digunakan untuk melihat apakah data terstruktur tersebut memenuhi syarat untuk ditampilkan sebagai hasil kaya di Google.
+
+3. Mengapa isi JSON-LD harus sama dengan konten yang terlihat pada halaman?  
+   Karena informasi dalam JSON-LD harus sesuai dengan informasi yang benar-benar ada di halaman. Dengan begitu, data yang dibaca mesin tidak berbeda dengan informasi yang dilihat oleh pengunjung.
