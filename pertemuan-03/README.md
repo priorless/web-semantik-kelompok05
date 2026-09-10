@@ -30,7 +30,7 @@ jawaban:Jika sebuah node tidak memiliki @id, maka node tersebut dianggap sebagai
 | No. | Bagian Salah | Alasan | Perbaikan |
 |---|---|---|---|
 | 1 | Kesalahan huruf besar/kecil pada tipe. `"@type": "person"` | Penulisan tipe Schema.org bersifat case-sensitive, harus menggunakan huruf `P` kapital | `"@type": "person"` ubah menjadi `"@type": "Person"` |
-| 2 | Kesalahan jenis tanda kutip. `'name'` | JSON harus menggunakan tanda kutip ganda (`"`) untuk property dan value. | Menggunakan tanda kutip ganda (`"`) sehingga menjadi `"name"` |
+| 2 | Kesalahan jenis tanda kutip. `'name'` | JSON harus menggunakan tanda kutip ganda (`"`) untuk property dan value. |  `'name'` ubah menjadi `"name"` |
 | 3 | Format tanggal yang tidak menggunakan ISO 8601. `"12 September 2004"` | Format tanggal tersebut bukan format ISO 8601 yang digunakan untuk tanggal | `"12 September 2004"` ubah menjadi `"2004-09-12"` |
 | 4 | Properti yang tidak terdaftar di schema.org . `"nomorInduk"` | `nomorInduk` bukan property yang terdaftar di Schema.org untuk menyatakan identitas atau pengenal suatu entitas | `"nomorInduk"` ubah menjadi `"identifier"` |
 | 5 | Koma yang menggantung pada properti terakhir. `"nomorInduk": "221401001",` | Dalam aturan sintaks JSON, properti atau item terakhir dalam sebuah objek tidak boleh diakhiri dengan tanda koma `","`. | Menghapus koma setelah `"identifier": "221401001"` |
