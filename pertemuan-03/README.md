@@ -14,7 +14,6 @@ jawaban: @context: Memetakan istilah/kunci lokal ke URI/IRI kosakata standar glo
 @id: Menjadi pengenal unik berformat IRI/URI untuk node tersebut di tingkat web.
 
 3. Apa yang terjadi pada sebuah node jika tidak memiliki @id?
-
 jawaban:Jika sebuah node tidak memiliki @id, maka node tersebut dianggap sebagai node kosong. Datanya tetap valid, tetapi entitas tersebut tidak dapat dirujuk secara langsung dari luar. 
 
 ## 3. Perbaikan Lima Kesalahan
