@@ -39,3 +39,12 @@ Tuliskan satu baris N-Quads yang terbentuk:
 
 3. Mengapa isi JSON-LD harus sama dengan konten yang terlihat pada halaman?  
    Karena informasi dalam JSON-LD harus sesuai dengan informasi yang benar-benar ada di halaman. Dengan begitu, data yang dibaca mesin tidak berbeda dengan informasi yang dilihat oleh pengunjung.
+
+
+## Bukti
+
+![Schema Markup Validator](screenshotsprofil-schema-validator.png)
+
+![JSON-LD Playground](screenshots/profil-playground.png)
+
+![Rich Results Test](screenshots/seminar-rich-results.png)
