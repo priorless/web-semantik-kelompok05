@@ -23,3 +23,8 @@ Tuliskan satu baris N-Quads yang terbentuk:
 ```
 <https://usu.ac.id/mhs/251402137> <http://schema.org/name> "Quinsha Ilmi Azzahra" .
 ```
+
+## 5. Hasil Validasi
+- Schema Markup Validator: 5 item `Person` terdeteksi, tidak ada kesalahan dan tidak ada peringatan.
+- Rich Results Test: 1 item valid terdeteksi. Data terstruktur yang terdeteksi adalah `Acara`. Masalah non-kritis terdeteksi.
+- JSON-LD Playground: N-Quads berhasil terbentuk.
