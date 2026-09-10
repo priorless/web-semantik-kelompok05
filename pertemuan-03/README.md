@@ -43,8 +43,14 @@ Tuliskan satu baris N-Quads yang terbentuk:
 
 ## Bukti
 
-![Schema Markup Validator](screenshotsprofil-schema-validator.png)
+### 1. Schema Markup Validator
+
+![Schema Markup Validator](screenshots/profil-schema-validator.png)
+
+### 2. JSON-LD Playground
 
 ![JSON-LD Playground](screenshots/profil-playground.png)
+
+### 3. Rich Results Test
 
 ![Rich Results Test](screenshots/seminar-rich-results.png)
