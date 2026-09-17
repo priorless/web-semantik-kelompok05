@@ -1,6 +1,6 @@
-# Latihan Pertemuan 4 — Metadata yang Dapat Dipertukarkan
+# Latihan Pertemuan 4 — Metadata dan Interoperabilitas
 
-## 1. Pilih dan Rancang Satu Sumber Belajar
+## Identitas sumber
 
 Sumber belajar yang digunakan adalah video pembelajaran dari YouTube dengan informasi sebagai berikut.
 
@@ -14,7 +14,7 @@ Sumber belajar yang digunakan adalah video pembelajaran dari YouTube dengan info
 | **Bahasa**    | en                                                                                                                                                                                       |
 | **Hak**       | Hak cipta oleh pembuat video                                                                                                                                                             |
 
-## 2. Petakan ke Dublin Core Terms
+## Pemetaan Dublin Core Terms
 
 Prefix yang digunakan:
 
