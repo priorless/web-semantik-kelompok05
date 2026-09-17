@@ -1,7 +1,7 @@
 # Web-Semantik-Kelompok05
 
 
-# [Pertemuan 1] - Pengenalan Web Semantik
+# Pertemuan 1 - Pengenalan Web Semantik
  
  ## 1. Eksplorasi Wikidata
 
