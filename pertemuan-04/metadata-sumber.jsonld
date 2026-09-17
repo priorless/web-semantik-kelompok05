@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "title": "dcterms:title",
+    "creator": "dcterms:creator",
+    "description": "dcterms:description",
+    "created": { "@id": "dcterms:created", "@type": "http://www.w3.org/2001/XMLSchema#date" },
+    "type": "dcterms:type",
+    "language": "dcterms:language",
+    "rights": "dcterms:rights"
+  },
+  "@id": "https://contoh.github.io/web-semantik/12345678/sumber-belajar",
+  "title": { "@value": "Introduction : The Semantic Web Foundation: RDF, URIs, and Ontologies Explained", "@language": "id" },
+  "creator": { "@value": "Mohamed Yoosuf Aathil", "@language": "id" },
+  "description": { "@value": "Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies.", "@language": "id" },
+  "created": "2025-10-23",
+  "type": "Text",
+  "language": "en",
+  "rights": "Creative Commons Attribution 4.0 International"
+}
