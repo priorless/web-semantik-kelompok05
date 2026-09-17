@@ -1,4 +1,4 @@
-# Latihan Pertemuan 3 - JSON-LD dan Structured Data
+# Pertemuan 3 - JSON-LD dan Structured Data
 
 ## Identitas
 - Nama: Dian Indriani
