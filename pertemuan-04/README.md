@@ -1,4 +1,4 @@
-# Latihan Pertemuan 4 — Metadata dan Interoperabilitas
+# Pertemuan 4 — Metadata dan Interoperabilitas
 
 ## Identitas sumber
 
