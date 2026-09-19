@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://priorless.github.io/web-semantik-kelompok05/12345678/sumber-belajar",
+  "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/sumber-belajar",
   "name": "Introduction : The Semantic Web Foundation: RDF, URIs, and Ontologies Explained",
   "description": "Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies.",
   "inLanguage": "en",
