@@ -14,7 +14,7 @@
   "creator": { "@value": "Mohamed Yoosuf Aathil", "@language": "id" },
   "description": { "@value": "Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies.", "@language": "id" },
   "created": "2025-10-23",
-  "type": "Text",
+  "type": "MovingImage",
   "language": "en",
   "rights": "Creative Commons Attribution 4.0 International"
 }
