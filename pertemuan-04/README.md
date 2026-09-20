@@ -4,15 +4,20 @@
 
 Sumber belajar yang digunakan adalah video pembelajaran dari YouTube dengan informasi sebagai berikut.
 
+- Judul: Introduction: The Semantic Web Foundation: RDF, URIs, and Ontologies Explained
+- Pembuat: Mohamed Yoosuf Aathil
+- URI sumber: https://priorless.github.io/web-semantik-kelompok05/251402087/sumber-belajar
+- Jenis sumber: MovingImage
+
 | Elemen        | Nilai                                                                                                                                                                                    |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Judul**     | *Introduction: The Semantic Web Foundation: RDF, URIs, and Ontologies Explained*                                                                                                         |
 | **Pembuat**   | Mohamed Yoosuf Aathil                                                                                                                                                                    |
 | **Deskripsi** | "Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies." |
 | **Tanggal**   | 2025-10-23                                                                                                                                                                               |
-| **Jenis**     | Video pembelajaran                                                                                                                                                                       |
+| **Jenis**     | MovingImage                                                                                                                                                                       |
 | **Bahasa**    | en                                                                                                                                                                                       |
-| **Hak**       | Hak cipta oleh pembuat video                                                                                                                                                             |
+| **Hak**       | Creative Commons Attribution 4.0 International.                                                                                                                                                             |
 
 ## Pemetaan Dublin Core Terms
 
@@ -24,11 +29,11 @@ Prefix yang digunakan:
 | -------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`dcterms:title`**        | Menyatakan judul sumber belajar                     | *Introduction: The Semantic Web Foundation: RDF, URIs, and Ontologies Explained*                                                                                                         |
 | **`dcterms:creator`**      | Menyatakan pihak yang membuat sumber                | Mohamed Yoosuf Aathil                                                                                                                                                                    |
-| **`dcterms:description`**  | Menjelaskan isi atau ringkasan sumber               | Video pengantar tentang dasar-dasar Web Semantik yang membahas RDF, URI, RDFS, dan OWL serta perannya dalam membantu aplikasi bertukar data dengan tetap mempertahankan makna informasi. |
+| **`dcterms:description`**  | Menjelaskan isi atau ringkasan sumber               | Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies. |
 | **`dcterms:created`**      | Menyatakan tanggal pembuatan atau penerbitan sumber | 2025-10-23                                                                                                                                                                               |
-| **`dcterms:type`**         | Menyatakan jenis sumber                             | Video pembelajaran                                                                                                                                                                       |
+| **`dcterms:type`**         | Menyatakan jenis sumber                             | MovingImage                                                                                                                                                                      |
 | **`dcterms:language`**     | Menyatakan bahasa yang digunakan dalam sumber       | en                                                                                                                                                                                       |
-| **`dcterms:rights`**       | Menyatakan informasi mengenai hak atas sumber       | Hak cipta oleh pembuat video                                                                                                                                                             |
+| **`dcterms:rights`**       | Menyatakan informasi mengenai hak atas sumber       | Creative Commons Attribution 4.0 International                                                                                                                                                             |
 
 ### Alasan Pemilihan Properti
 
@@ -51,3 +56,4 @@ Jawaban: DC Terms (Dublin Core) berfokus pada standar kearsipan/katalogisasi met
 Jawaban: Terjadi ketidakcocokan data (data ambiguity/mismatch), sehingga mesin atau sistem agregator Semantic Web bisa salah menafsirkan informasi atau gagal menggabungkan data (interoperability fail).
 
 ## Catatan akhir
+Seluruh metadata pada berkas HTML (`sumber-belajar.html`), Turtle (`metadata-sumber.ttl`), JSON-LD DC Terms (`metadata-sumber.jsonld`), dan JSON-LD Schema.org (`metadata-schema.jsonld`) telah diselaraskan secara penuh. Setiap berkas menggunakan URI subjek yang identik (`https://priorless.github.io/web-semantik-kelompok05/251402087/sumber-belajar`), nilai atribut dasar yang konsisten (judul, pembuat, deskripsi, tanggal buat, bahasa, serta lisensi CC BY 4.0), dan sintaksis yang valid sesuai spesifikasi format masing-masing.
