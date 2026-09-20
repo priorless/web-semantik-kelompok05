@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/>; .
+@prefix xsd     : <http://www.w3.org/2001/XMLSchema#>; .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/sumber-belajar>
+    dcterms:title "Introduction: The Semantic Web Foundation: RDF, URIs, and Ontologies Explained"@id ;
+    dcterms:creator "Mohamed Yoosuf Aathil"@id ;
+    dcterms:description "Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies."@id ;
+    dcterms:created "2025-10-23"^^xsd:date ;
+    dcterms:type "Text" ;
+    dcterms:language "en" ;
+    dcterms:rights "Creative Commons Attribution 4.0 International" .
