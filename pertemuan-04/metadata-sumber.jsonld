@@ -10,8 +10,8 @@
     "rights": "dcterms:rights"
   },
   "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/sumber-belajar",
-  "title": { "@value": "Introduction : The Semantic Web Foundation: RDF, URIs, and Ontologies Explained", "@language": "id" },
-  "creator": { "@value": "Mohamed Yoosuf Aathil", "@language": "id" },
+  "title": { "@value": "Introduction: The Semantic Web Foundation: RDF, URIs, and Ontologies Explained", "@language": "en" },
+  "creator": { "@value": "Mohamed Yoosuf Aathil", "@language": "en" },
   "description": { "@value": "Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies.", "@language": "id" },
   "created": "2025-10-23",
   "type": "MovingImage",

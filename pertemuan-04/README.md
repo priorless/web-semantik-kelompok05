@@ -8,7 +8,7 @@ Sumber belajar yang digunakan adalah video pembelajaran dari YouTube dengan info
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Judul**     | *Introduction: The Semantic Web Foundation: RDF, URIs, and Ontologies Explained*                                                                                                         |
 | **Pembuat**   | Mohamed Yoosuf Aathil                                                                                                                                                                    |
-| **Deskripsi** | Video pengantar tentang dasar-dasar Web Semantik yang membahas RDF, URI, RDFS, dan OWL serta perannya dalam membantu aplikasi bertukar data dengan tetap mempertahankan makna informasi. |
+| **Deskripsi** | "Video pembelajaran mengenai fondasi Semantic Web, Resource Description Framework (RDF), URIs, dan Ontologies." |
 | **Tanggal**   | 2025-10-23                                                                                                                                                                               |
 | **Jenis**     | Video pembelajaran                                                                                                                                                                       |
 | **Bahasa**    | en                                                                                                                                                                                       |
