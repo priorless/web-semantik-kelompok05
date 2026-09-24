@@ -34,6 +34,14 @@ Domain yang digunakan dalam latihan ini adalah **kampus Universitas Sumatera Uta
 **Axiom:**
 - `Mahasiswa disjointWith Dosen`, yang berarti seorang individu tidak dapat menjadi `Mahasiswa` dan `Dosen` secara bersamaan dalam model ontology ini.
 
+## Perbandingan serialisasi
+
+- Turtle: Sintaksnya lebih singkat dan mudah dibaca karena menggunakan `@prefix` untuk menyingkat IRI. Selain itu, class, property, dan individual bisa ditulis langsung menggunakan prefix seperti `:Student` dan `:takesCourse`, sehingga tidak perlu menuliskan IRI lengkap berulang kali.
+
+- RDF/XML: Sintaksnya lebih panjang karena menggunakan struktur XML seperti `<rdf:Description>`, `<rdf:type>`, dan `rdf:resource`. Penulisannya juga lebih banyak mengguankan tag pembuka dan penutup untuk menjelaskan setiap bagian dari ontology.
+
+- Kesamaan makna: Walaupun cara penulisannya berbeda, kedua file tersebut tetap merepresentasikan ontology yang sama. Class, property, individual, IRI dasar, dan hubungan anatr entitas yang ada di dalamnya tetap memiliki makna yang sama.
+
 ## Refleksi
 
 1. **Apa perbedaan ontology dan taksonomi?**
