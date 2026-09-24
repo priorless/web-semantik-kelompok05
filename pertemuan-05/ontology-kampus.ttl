@@ -1,0 +1,99 @@
+@prefix : <https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+:Lecturer_Fahrurrozi a owl:NamedIndividual,
+        :Lecturer ;
+    :belongsToDepartment :Dept_Fasilkom_TI ;
+    :hasName "Fahrurrozi Lubis B.IT., M.Sc.IT" ;
+    :teachesCourse :Course_WebSemantik .
+
+:Lecturer_Isa a owl:NamedIndividual,
+        :Lecturer ;
+    :belongsToDepartment :Dept_Fasilkom_TI ;
+    :hasName "Muhammad Isa Dadi Hasibuan S.Kom., M.Kom" ;
+    :teachesCourse :Course_WebSemantik .
+
+:Student_Dayuk a owl:NamedIndividual,
+        :Student ;
+    :belongsToDepartment :Dept_Fasilkom_TI ;
+    :hasNIM "251402087" ;
+    :hasName "Indah Ayu Gemilang" ;
+    :takesCourse :Course_WebSemantik .
+
+:Student_Dian a owl:NamedIndividual,
+        :Student ;
+    :belongsToDepartment :Dept_Fasilkom_TI ;
+    :hasNIM "251402040" ;
+    :hasName "Dian Indriani" ;
+    :takesCourse :Course_WebSemantik .
+
+:Student_azko a owl:NamedIndividual,
+        :Student ;
+    :belongsToDepartment :Dept_Fasilkom_TI ;
+    :hasNIM "251402131" ;
+    :hasName "Keizya Azalea Azka" ;
+    :takesCourse :Course_KDJK .
+
+:Student_jihuy a owl:NamedIndividual,
+        :Student ;
+    :belongsToDepartment :Dept_Fasilkom_TI ;
+    :hasNIM "251402098" ;
+    :hasName "Jihan Fadhilah" ;
+    :takesCourse :Course_KDJK .
+
+:Student_kuinsuy a owl:NamedIndividual,
+        :Student ;
+    :belongsToDepartment :Dept_Fasilkom_TI ;
+    :hasNIM "251402137" ;
+    :hasName "Quinsha Ilmi Azzahra" ;
+    :takesCourse :Course_WebSemantik .
+
+:belongsToDepartment a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Department .
+
+:hasNIM a owl:DatatypeProperty ;
+    rdfs:domain :Student ;
+    rdfs:range xsd:string .
+
+:hasName a owl:DatatypeProperty ;
+    rdfs:domain :Person ;
+    rdfs:range xsd:string .
+
+:takesCourse a owl:ObjectProperty ;
+    rdfs:domain :Student ;
+    rdfs:range :Course .
+
+:teachesCourse a owl:ObjectProperty ;
+    rdfs:domain :Lecturer ;
+    rdfs:range :Course .
+
+:Course_KDJK a owl:NamedIndividual,
+        :Course ;
+    :hasName "Komunikasi Data Dan Jaringan Komputer" .
+
+:Department a owl:Class .
+
+:Course a owl:Class .
+
+:Lecturer a owl:Class ;
+    rdfs:subClassOf :Person .
+
+:Person a owl:Class .
+
+:Course_WebSemantik a owl:NamedIndividual,
+        :Course ;
+    :hasName "Web Semantik" .
+
+:Dept_Fasilkom_TI a owl:NamedIndividual,
+        :Department ;
+    :hasName "Fakultas Ilmu Komputer dan Teknologi Informasi" .
+
+:Student a owl:Class ;
+    rdfs:subClassOf :Person ;
+    owl:disjointWith :Lecturer .
+
