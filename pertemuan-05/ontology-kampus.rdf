@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Department"/>
+    <hasName>Fakultas Ilmu Komputer dan Teknologi Informasi</hasName>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student_jihuy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student"/>
+    <hasName>Jihan Fadhilah</hasName>
+    <hasNIM>251402098</hasNIM>
+    <takesCourse rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_KDJK"/>
+    <belongsToDepartment rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Lecturer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Person"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student_azko">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student"/>
+    <hasName>Keizya Azalea Azka</hasName>
+    <hasNIM>251402131</hasNIM>
+    <takesCourse rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_KDJK"/>
+    <belongsToDepartment rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student_kuinsuy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student"/>
+    <hasName>Quinsha Ilmi Azzahra</hasName>
+    <hasNIM>251402137</hasNIM>
+    <takesCourse rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_WebSemantik"/>
+    <belongsToDepartment rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Lecturer_Fahrurrozi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Lecturer"/>
+    <hasName>Fahrurrozi Lubis B.IT., M.Sc.IT</hasName>
+    <teachesCourse rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_WebSemantik"/>
+    <belongsToDepartment rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student_Dayuk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student"/>
+    <hasName>Indah Ayu Gemilang</hasName>
+    <hasNIM>251402087</hasNIM>
+    <takesCourse rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_WebSemantik"/>
+    <belongsToDepartment rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_KDJK">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course"/>
+    <hasName>Komunikasi Data Dan Jaringan Komputer</hasName>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_WebSemantik">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course"/>
+    <hasName>Web Semantik</hasName>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#belongsToDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Person"/>
+    <rdfs:range rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Department"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Lecturer_Isa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Lecturer"/>
+    <hasName>Muhammad Isa Dadi Hasibuan S.Kom., M.Kom</hasName>
+    <teachesCourse rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_WebSemantik"/>
+    <belongsToDepartment rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#teachesCourse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Lecturer"/>
+    <rdfs:range rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#takesCourse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student"/>
+    <rdfs:range rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#hasNIM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student_Dian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student"/>
+    <hasName>Dian Indriani</hasName>
+    <hasNIM>251402040</hasNIM>
+    <takesCourse rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Course_WebSemantik"/>
+    <belongsToDepartment rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Dept_Fasilkom_TI"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#hasName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Student">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Person"/>
+    <owl:disjointWith rdf:resource="https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#Lecturer"/>
+  </rdf:Description>
+</rdf:RDF>
