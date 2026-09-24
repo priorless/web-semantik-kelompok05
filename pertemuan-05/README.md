@@ -33,3 +33,14 @@ Domain yang digunakan dalam latihan ini adalah **kampus Universitas Sumatera Uta
 
 **Axiom:**
 - `Mahasiswa disjointWith Dosen`, yang berarti seorang individu tidak dapat menjadi `Mahasiswa` dan `Dosen` secara bersamaan dalam model ontology ini.
+
+## Refleksi
+
+1. **Apa perbedaan ontology dan taksonomi?**
+   Taksonomi lebih fokus pada pengelompokan konsep berdasarkan tingkatan, sedangkan ontology juga menjelaskan hubungan dan aturan antar konsep dalam suatu domain.
+
+2. **Mengapa domain pada OWL bukan constraint database?**
+   Karena domain pada OWL digunakan untuk menunjukkan class yang berkaitan dengan suatu property. Domain tidak membatasi data seperti constraint pada database, tetapi dapat membantu reasoner menarik kesimpulan.
+
+3. **Mengapa kosakata yang sudah ada sebaiknya dipakai kembali sebelum membuat yang baru?**
+   Agar tidak membuat istilah yang sebenarnya sudah tersedia dan supaya ontology lebih mudah dipahami serta dapat digunakan bersama dengan ontology atau sistem lain.
