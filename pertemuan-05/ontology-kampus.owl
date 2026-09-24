@@ -1,0 +1,123 @@
+@prefix : <https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#> .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes (Kelas & Hierarki)
+#################################################################
+
+:Person rdf:type owl:Class .
+
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+:Lecturer rdf:type owl:Class ;
+          rdfs:subClassOf :Person .
+
+:Course rdf:type owl:Class .
+
+:Department rdf:type owl:Class .
+
+#################################################################
+#    Axioms (Disjoint Classes)
+#################################################################
+
+# Mahasiswa dan Dosen tidak boleh entitas yang sama persis di waktu yang sama
+:Student owl:disjointWith :Lecturer .
+
+#################################################################
+#    Object Properties (Relasi antar Objek/Individual)
+#################################################################
+
+:takesCourse rdf:type owl:ObjectProperty ;
+             rdfs:domain :Student ;
+             rdfs:range :Course .
+
+:teachesCourse rdf:type owl:ObjectProperty ;
+               rdfs:domain :Lecturer ;
+               rdfs:range :Course .
+
+# Property pilihan tambahan
+:belongsToDepartment rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Person ;
+                     rdfs:range :Department .
+
+#################################################################
+#    Datatype Properties (Atribut Data)
+#################################################################
+
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:string .
+
+:hasNIM rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Student ;
+        rdfs:range xsd:string .
+
+#################################################################
+#    Individuals (Data Instance / Entitas Konkret)
+#################################################################
+
+# 1. Department
+:Dept_Fasilkom_TI rdf:type owl:NamedIndividual , :Department ;
+                  :hasName "Fakultas Ilmu Komputer dan Teknologi Informasi" .
+
+# 2. Course
+:Course_WebSemantik rdf:type owl:NamedIndividual , :Course ;
+                    :hasName "Web Semantik" .
+
+# 3. Course
+:Course_KDJK rdf:type owl:NamedIndividual , :Course ;
+                    :hasName "Komunikasi Data Dan Jaringan Komputer" .
+
+# 4. Lecturer 
+:Lecturer_Isa rdf:type owl:NamedIndividual , :Lecturer ;
+              :hasName "Muhammad Isa Dadi Hasibuan S.Kom., M.Kom" ;
+              :teachesCourse :Course_WebSemantik ;
+              :belongsToDepartment :Dept_Fasilkom_TI .
+
+# 5. Lecturer 
+:Lecturer_Fahrurrozi rdf:type owl:NamedIndividual , :Lecturer ;
+              :hasName "Fahrurrozi Lubis B.IT., M.Sc.IT" ;
+              :teachesCourse :Course_WebSemantik ;
+              :belongsToDepartment :Dept_Fasilkom_TI .
+# 6. Student 1 
+:Student_Dian rdf:type owl:NamedIndividual , :Student ;
+              :hasName "Dian Indriani" ;
+              :hasNIM "251402040" ;
+              :takesCourse :Course_WebSemantik ;
+              :belongsToDepartment :Dept_Fasilkom_TI .
+
+# 7. Student 2
+:Student_Dayuk rdf:type owl:NamedIndividual , :Student ;
+              :hasName "Indah Ayu Gemilang" ;
+              :hasNIM "251402087" ;
+              :takesCourse :Course_WebSemantik ;
+              :belongsToDepartment :Dept_Fasilkom_TI .
+
+# 8. Student 3
+:Student_jihuy rdf:type owl:NamedIndividual , :Student ;
+              :hasName "Jihan Fadhilah" ;
+              :hasNIM "251402098" ;
+              :takesCourse :Course_KDJK ;
+              :belongsToDepartment :Dept_Fasilkom_TI .
+
+# 9. Student 4
+:Student_azko rdf:type owl:NamedIndividual , :Student ;
+              :hasName "Keizya Azalea Azka" ;
+              :hasNIM "251402131" ;
+              :takesCourse :Course_KDJK ;
+              :belongsToDepartment :Dept_Fasilkom_TI .
+
+# 10. Student 5
+:Student_kuinsuy rdf:type owl:NamedIndividual , :Student ;
+              :hasName "Quinsha Ilmi Azzahra" ;
+              :hasNIM "251402137" ;
+              :takesCourse :Course_WebSemantik ;
+              :belongsToDepartment :Dept_Fasilkom_TI .
