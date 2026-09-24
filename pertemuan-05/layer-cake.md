@@ -7,7 +7,7 @@
 | RDF dan RDFS | Pernyataan graph dan kosakata dasar | RDF pada file `metadata-sumber.ttl` |
 | Ontology / OWL | Makna domain dan penalaran lebih kaya | OWL pada file `ontology-kampus.owl` |
 | SPARQL | Query graph RDF | Belum ada artefak terkait pada Pertemuan 1–4 |
-| Rules, Proof, Trust | Belum ada artefak terkait pada Pertemuan 1–4 |
+| Rules, Proof, Trust | Aturan, pembuktian, dan kepercayaan | Belum ada artefak terkait pada Pertemuan 1–4 |
 
 ## Mengapa ontology berada di atas RDF/RDFS dan di bawah SPARQL?
 
