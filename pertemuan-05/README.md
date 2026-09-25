@@ -52,3 +52,14 @@ Domain yang digunakan dalam latihan ini adalah **kampus Universitas Sumatera Uta
 
 3. **Mengapa kosakata yang sudah ada sebaiknya dipakai kembali sebelum membuat yang baru?**
    Agar tidak membuat istilah yang sebenarnya sudah tersedia dan supaya ontology lebih mudah dipahami serta dapat digunakan bersama dengan ontology atau sistem lain.
+
+## Langkah-3 Eksplorasi Protégé (pizza.owl)
+## Komponen ontology
+| Komponen | Isi yang dibuat |
+| --- | --- |
+| Class | `Pizza` |
+| Subclass | `CheesyPizza`, `MeatyPizza`, dan `VegetarianPizza` (subclass dari `Pizza`) |
+| Object property | `hasTopping` (menghubungkan class `Pizza` dengan `PizzaTopping`) |
+| Datatype property | `hasCaloricContent` |
+| Individual | `MargheritaInstance` (contoh instance dari `NamedPizza`) |
+| Axiom/disjointness | `VegetarianPizza` dan `NonVegetarianPizza` bersifat *disjoint* (saling lepas) |
