@@ -3,7 +3,7 @@ from rdflib.namespace import RDF, FOAF, XSD
 
 g = Graph()
 
-EX = Namespace("https://priorless.github.io/web-semantik-kelompok05/kampus#")
+EX = Namespace("https://priorless.github.io/web-semantik-kelompok05/251402087kampus#")
 
 g.bind("ex", EX)
 g.bind("foaf", FOAF)
