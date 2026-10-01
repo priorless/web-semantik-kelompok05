@@ -40,6 +40,35 @@ https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#
 - *xsd* = XML Schema Definition
 - *foaf* = Friend of a Friend
 
+## Ringkasan graf
+- Jumlah triple: 32 triple
+- Namespace yang digunakan: `ex`, `foaf`, `rdf`, `xsd`
+- Entitas: 3 Dosen (Isa Dadi, Umayya, Opim Salim), 3 Mata Kuliah (Web Semantik, Basis Data, Dasar Pemrograman), 2 Mahasiswa (Indah, Keizya), dan 1 Universitas (USU).
+
+## Contoh triple
+1. ex:isa_dadi - rdf:type - ex:Lecturer
+2. ex:keizya - ex:mengambil - ex:basis_data
+3. ex:dasar_pemrograman - ex:jumlahKredit - "3"^^xsd:integer
+
+## Perbandingan serialisasi
+- Turtle: Formatnya lebih ringkas dan sangat mudah dibaca oleh manusia. Format ini memanfaatkan prefix (seperti `ex:` dan `foaf:`) sehingga penulisan IRI tidak perlu diulang-ulang secara penuh.
+- JSON-LD: Formatnya berupa struktur data JSON (pasangan *key-value*). Bentuk ini sangat memudahkan mesin atau aplikasi web modern untuk memproses data graf, dengan menggunakan `@id` untuk merepresentasikan IRI.
+- Pernyataan yang sama (contoh nama dosen):
+  - **Turtle:** 
+    `ex:umaya foaf:name "Umayya"@id .`
+  - **JSON-LD:**
+    ```json
+    {
+      "@id": "[https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya](https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya)",
+      "[http://xmlns.com/foaf/0.1/name](http://xmlns.com/foaf/0.1/name)": [
+        {
+          "@language": "id",
+          "@value": "Umayya"
+        }
+      ]
+    }
+    ```
+
 ## Refleksi
 
 **1. Kapan object harus berupa IRI dan kapan berupa literal?**

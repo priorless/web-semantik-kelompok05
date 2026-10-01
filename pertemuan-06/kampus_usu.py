@@ -66,3 +66,11 @@ g.add((EX.dasar_pemrograman, EX.hariKuliah, Literal("Rabu", lang="id")))
 print(g.serialize(format="turtle"))
 g.serialize("kampus_usu.ttl", format="turtle")
 g.serialize("kampus_usu.jsonld", format="json-ld", indent=2)
+
+
+print("\nOutput Turtle:\n" + "="*40)
+print(g.serialize(format="turtle"))
+
+print("\nDaftar dosen:\n" + "="*40)
+for subject, predicate, obj in g.triples((None, RDF.type, EX.Lecturer)):
+    print(subject)

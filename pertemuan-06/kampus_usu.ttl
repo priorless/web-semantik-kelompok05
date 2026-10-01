@@ -1,0 +1,45 @@
+@prefix ex: <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:indah a ex:Student ;
+    foaf:name "Indah Ayu Gemilang"@id ;
+    ex:mengambil ex:web_semantik .
+
+ex:isa_dadi a ex:Lecturer ;
+    foaf:name "Isa Dadi"@id ;
+    ex:bekerjaDi ex:usu ;
+    ex:mengajar ex:web_semantik .
+
+ex:keizya a ex:Student ;
+    foaf:name "Keizya Azalea Azka"@id ;
+    ex:mengambil ex:basis_data .
+
+ex:opim_salim a ex:Lecturer ;
+    foaf:name "Opim Salim"@id ;
+    ex:bekerjaDi ex:usu ;
+    ex:mengajar ex:dasar_pemrograman .
+
+ex:umaya a ex:Lecturer ;
+    foaf:name "Umayya"@id ;
+    ex:bekerjaDi ex:usu ;
+    ex:mengajar ex:basis_data .
+
+ex:dasar_pemrograman a ex:Course ;
+    foaf:name "Dasar Pemrograman"@id ;
+    ex:hariKuliah "Rabu"@id ;
+    ex:jumlahKredit 3 .
+
+ex:basis_data a ex:Course ;
+    foaf:name "Basis Data"@id ;
+    ex:hariKuliah "Selasa"@id ;
+    ex:jumlahKredit 3 .
+
+ex:web_semantik a ex:Course ;
+    foaf:name "Web Semantik"@id ;
+    ex:hariKuliah "Senin"@id ;
+    ex:jumlahKredit 3 .
+
+ex:usu a ex:University ;
+    foaf:name "Universitas Sumatera Utara"@id .
+
