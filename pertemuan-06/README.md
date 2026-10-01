@@ -58,9 +58,9 @@ https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#
     `ex:umaya foaf:name "Umayya"@id .`
   - **JSON-LD:**
     ```json
-    {
-      "@id": "[https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya](https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya)",
-      "[http://xmlns.com/foaf/0.1/name](http://xmlns.com/foaf/0.1/name)": [
+   {
+      "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya",
+      "http://xmlns.com/foaf/0.1/name": [
         {
           "@language": "id",
           "@value": "Umayya"
