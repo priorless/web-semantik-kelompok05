@@ -31,7 +31,6 @@ Literal tidak boleh menjadi subject RDF karena literal digunakan sebagai nilai a
 
 ### 3. Buat IRI dasar untuk graf Anda dengan pola HTTP
 IRI dasar yang digunakan adalah:
-text
 https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#
 
 
