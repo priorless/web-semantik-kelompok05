@@ -19,6 +19,27 @@ Berikut contoh pemodelan kalimat menjadi triple RDF.
 
 Subject merupakan entitas yang dibahas, predicate menunjukkan hubungan atau sifatnya, sedangkan object merupakan entitas lain atau nilai yang berkaitan dengan subject.
 
+# IRI, Literal, Blank Node, dan Prefix
+
+## 1. Identifikasi jenis node untuk ex:ida, "Ida Adi"@id, dan [ ex:kota "Medan" ]
+- ex:ida → *IRI*, karena merupakan identitas atau resource yang dapat digunakan sebagai subject maupun object dalam RDF.
+- "Ida Adi"@id → *Literal*, karena merupakan nilai berupa teks dengan language tag id.
+- [ ex:kota "Medan" ] → *Blank Node*, karena merupakan node yang tidak memiliki nama atau IRI yang diberikan secara langsung.
+
+## 2. Mengapa literal tidak boleh menjadi subject RDF?
+Literal tidak boleh menjadi subject RDF karena literal digunakan sebagai nilai atau informasi akhir, seperti nama, tanggal, angka, atau teks. Subject harus berupa IRI atau blank node agar dapat menjadi identitas suatu resource dan memiliki hubungan dengan pernyataan RDF lainnya.
+
+## 3. Buat IRI dasar untuk graf Anda dengan pola HTTP, misalnya https://contoh.github.io/web-semantik/ISI_NIM/kampus#.
+IRI dasar yang digunakan adalah:
+text
+https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#
+
+
+## 4. Tuliskan kepanjangan namespace rdf, rdfs, xsd, dan foaf
+- *rdf* = Resource Description Framework
+- *rdfs* = RDF Schema
+- *xsd* = XML Schema Definition
+- *foaf* = Friend of a Friend
 
 ## Refleksi
 
