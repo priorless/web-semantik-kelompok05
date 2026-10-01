@@ -2,37 +2,22 @@
 
 ## IRI dasar graf
 
-Graf RDF ini menggunakan namespace berikut:
+Graf RDF menggunakan namespace berikut:
 
 * `ex:` — `http://example.org/kampus/`
 * `rdf:` — `http://www.w3.org/1999/02/22-rdf-syntax-ns#`
-* `rdfs:` — `http://www.w3.org/2000/01/rdf-schema#`
-
-## Ringkasan graf
-
-* Jumlah triple: **3** (untuk contoh awal pada Langkah 1)
-* Namespace yang digunakan: `ex:`, `rdf`
-* Entitas: `ex:ida`, `ex:Lecturer`, `ex:WebSemantik`
 
 ## Contoh triple
 
-1. `ex:ida` - `rdf:type` - `ex:Lecturer`
-2. `ex:ida` - `ex:teaches` - `ex:WebSemantik`
-3. `ex:WebSemantik` - `ex:name` - `"Web Semantik"`
+Berikut contoh pemodelan kalimat menjadi triple RDF.
 
-## Perbandingan serialisasi
+| Kalimat                                       | Subject          | Predicate    | Object           |
+| --------------------------------------------- | ---------------- | ------------ | ---------------- |
+| Ida Adi adalah dosen.                         | `ex:ida`         | `rdf:type`   | `ex:Lecturer`    |
+| Ida Adi mengajar Web Semantik.                | `ex:ida`         | `ex:teaches` | `ex:WebSemantik` |
+| Mata kuliah itu memiliki nama "Web Semantik". | `ex:WebSemantik` | `ex:name`    | `"Web Semantik"` |
 
-* Turtle: Menggunakan prefix agar IRI lebih singkat dan mudah dibaca.
-* JSON-LD: Menggunakan format JSON dengan konteks untuk menjelaskan namespace dan hubungan antar-entitas.
-* Pernyataan yang sama: Kedua format merepresentasikan informasi RDF yang sama, yaitu Ida Adi adalah dosen, mengajar Web Semantik, dan mata kuliah tersebut memiliki nama "Web Semantik".
-
-## Refleksi
-
-1. Object harus berupa IRI jika merujuk pada entitas atau sumber daya lain. Object berupa literal jika berisi nilai seperti teks, angka, atau tanggal.
-2. Prefix membantu keterbacaan karena IRI panjang dapat ditulis dalam bentuk yang lebih singkat. Prefix tidak mengubah IRI sebenarnya.
-3. Salah satu kesalahan pemodelan yang dihindari adalah menggunakan literal sebagai subject, padahal subject RDF harus berupa IRI atau blank node.
-
-
+Subject merupakan entitas yang dibahas, predicate menunjukkan hubungan atau sifatnya, sedangkan object merupakan entitas lain atau nilai yang berkaitan dengan subject.
 
 
 ## Refleksi
