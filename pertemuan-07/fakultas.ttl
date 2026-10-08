@@ -1,0 +1,11 @@
+@prefix ex: <https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:fasilkom a ex:Faculty .
+ex:fasilkom rdfs:label "Fakultas Ilmu Komputer dan Teknologi Informasi" .
+ex:fasilkom ex:kodeFakultas "FASILKOM-TI" .
+ex:fasilkom ex:memilikiDepartemen ex:ti .
+ex:fasilkom ex:lokasi "Kampus USU Padang Bulan" .
+
+ex:ti a ex:Department .

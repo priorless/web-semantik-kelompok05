@@ -1,0 +1,36 @@
+@prefix ex: <https://priorless.github.io/web-semantik-kelompok05/251402040/kampus#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://priorless.github.io/web-semantik-kelompok05/graph/kampus> {
+  ex:ida a ex:Lecturer ;
+    foaf:name "Dra. Ida Mariati, M.Sc."@id ;
+    ex:mengajar ex:web_semantik .
+
+   ex:stmt-01 a rdf:Statement ;
+    rdf:subject ex:ida ;
+    rdf:predicate ex:mengajar ;
+    rdf:object ex:web_semantik ;
+    dcterms:creator ex:ida ;
+    dcterms:date "2026-10-01"^^xsd:date ;
+    dcterms:source "Data akademik kampus" .
+
+  << ex:ida ex:mengajar ex:web_semantik >> dcterms:creator ex:ida ;
+                                          dcterms:date "2026-10-01"^^xsd:date ;
+                                          dcterms:source "Data akademik kampus" .
+}
+
+
+<https://priorless.github.io/web-semantik-kelompok05/graph/fakultas> {
+  ex:fasilkom a ex:Faculty .
+  ex:fasilkom rdfs:label "Fakultas Ilmu Komputer dan Teknologi Informasi" .
+  ex:fasilkom ex:kodeFakultas "FASILKOM-TI" .
+  ex:fasilkom ex:memilikiDepartemen ex:ti .
+  ex:fasilkom ex:lokasi "Kampus USU Padang Bulan" .
+
+  ex:ti a ex:Department .
+  ex:ti rdfs:label "Teknologi Informasi" .
+}
