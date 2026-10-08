@@ -1,13 +1,84 @@
 [
   {
-    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya",
+    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#keizya",
+    "@type": [
+      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Student"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "id",
+        "@value": "Keizya Azalea Azka"
+      }
+    ],
+    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data"
+      }
+    ]
+  },
+  {
+    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Kelompok 05"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-10-08"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@value": "Graf kampus_usu.ttl Pertemuan 6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi"
+      }
+    ]
+  },
+  {
+    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah",
+    "@type": [
+      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Student"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "id",
+        "@value": "Indah Ayu Gemilang"
+      }
+    ],
+    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik"
+      }
+    ]
+  },
+  {
+    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim",
     "@type": [
       "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer"
     ],
     "http://xmlns.com/foaf/0.1/name": [
       {
         "@language": "id",
-        "@value": "Umayya"
+        "@value": "Opim Salim"
       }
     ],
     "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi": [
@@ -17,7 +88,7 @@
     ],
     "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar": [
       {
-        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data"
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman"
       }
     ]
   },
@@ -46,62 +117,6 @@
     ]
   },
   {
-    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu",
-    "@type": [
-      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#University"
-    ],
-    "http://xmlns.com/foaf/0.1/name": [
-      {
-        "@language": "id",
-        "@value": "Universitas Sumatera Utara"
-      }
-    ]
-  },
-  {
-    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim",
-    "@type": [
-      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer"
-    ],
-    "http://xmlns.com/foaf/0.1/name": [
-      {
-        "@language": "id",
-        "@value": "Opim Salim"
-      }
-    ],
-    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi": [
-      {
-        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu"
-      }
-    ],
-    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar": [
-      {
-        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman"
-      }
-    ]
-  },
-  {
-    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi",
-    "@type": [
-      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer"
-    ],
-    "http://xmlns.com/foaf/0.1/name": [
-      {
-        "@language": "id",
-        "@value": "Isa Dadi"
-      }
-    ],
-    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi": [
-      {
-        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu"
-      }
-    ],
-    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar": [
-      {
-        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik"
-      }
-    ]
-  },
-  {
     "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman",
     "@type": [
       "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course"
@@ -122,23 +137,6 @@
       {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
         "@value": 3
-      }
-    ]
-  },
-  {
-    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#keizya",
-    "@type": [
-      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Student"
-    ],
-    "http://xmlns.com/foaf/0.1/name": [
-      {
-        "@language": "id",
-        "@value": "Keizya Azalea Azka"
-      }
-    ],
-    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil": [
-      {
-        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data"
       }
     ]
   },
@@ -167,19 +165,58 @@
     ]
   },
   {
-    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah",
+    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya",
     "@type": [
-      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Student"
+      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer"
     ],
     "http://xmlns.com/foaf/0.1/name": [
       {
         "@language": "id",
-        "@value": "Indah Ayu Gemilang"
+        "@value": "Umayya"
       }
     ],
-    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil": [
+    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu"
+      }
+    ],
+    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data"
+      }
+    ]
+  },
+  {
+    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi",
+    "@type": [
+      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "id",
+        "@value": "Isa Dadi"
+      }
+    ],
+    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi": [
+      {
+        "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu"
+      }
+    ],
+    "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar": [
       {
         "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik"
+      }
+    ]
+  },
+  {
+    "@id": "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu",
+    "@type": [
+      "https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#University"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "id",
+        "@value": "Universitas Sumatera Utara"
       }
     ]
   }

@@ -1,32 +1,39 @@
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> <http://xmlns.com/foaf/0.1/name> "Universitas Sumatera Utara"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#hariKuliah> "Rabu"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> <http://xmlns.com/foaf/0.1/name> "Isa Dadi"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <http://xmlns.com/foaf/0.1/name> "Web Semantik"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <http://xmlns.com/foaf/0.1/name> "Basis Data"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#jumlahKredit> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#hariKuliah> "Senin"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> <http://xmlns.com/foaf/0.1/name> "Opim Salim"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#hariKuliah> "Selasa"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> .
 <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#keizya> <http://xmlns.com/foaf/0.1/name> "Keizya Azalea Azka"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#jumlahKredit> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> <http://xmlns.com/foaf/0.1/name> "Umayya"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <http://xmlns.com/foaf/0.1/name> "Dasar Pemrograman"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Student> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#keizya> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah> <http://xmlns.com/foaf/0.1/name> "Indah Ayu Gemilang"@id .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> <http://xmlns.com/foaf/0.1/name> "Isa Dadi"@id .
 <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> .
-<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#jumlahKredit> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#keizya> <http://xmlns.com/foaf/0.1/name> "Keizya Azalea Azka"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <http://xmlns.com/foaf/0.1/name> "Web Semantik"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> <http://xmlns.com/foaf/0.1/name> "Opim Salim"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#hariKuliah> "Rabu"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <http://xmlns.com/foaf/0.1/name> "Dasar Pemrograman"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#hariKuliah> "Senin"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> .
 <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#University> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> .
 <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#keizya> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengambil> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01> <http://purl.org/dc/terms/creator> "Kelompok 05" .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01> <http://purl.org/dc/terms/source> "Graf kampus_usu.ttl Pertemuan 6" .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah> <http://xmlns.com/foaf/0.1/name> "Indah Ayu Gemilang"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#hariKuliah> "Selasa"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> <http://xmlns.com/foaf/0.1/name> "Umayya"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> <http://xmlns.com/foaf/0.1/name> "Universitas Sumatera Utara"@id .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01> <http://purl.org/dc/terms/date> "2026-10-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#jumlahKredit> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#indah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Student> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> .
 <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#keizya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Student> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#jumlahKredit> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mengajar> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#dasar_pemrograman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#bekerjaDi> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#usu> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#web_semantik> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#stmt-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#jumlahKredit> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#basis_data> <http://xmlns.com/foaf/0.1/name> "Basis Data"@id .
