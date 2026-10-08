@@ -6,21 +6,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://priorless.github.io/web-semantik-kelompok05/graph/kampus> {
-  ex:ida a ex:Lecturer ;
-    foaf:name "Dra. Ida Mariati, M.Sc."@id ;
+  ex:isa_dadi a ex:Lecturer ;
+    foaf:name "Isa Dadi, S.Kom., M.Sc." ;
     ex:mengajar ex:web_semantik .
 
    ex:stmt-01 a rdf:Statement ;
-    rdf:subject ex:ida ;
+    rdf:subject ex:isa_dadi ;
     rdf:predicate ex:mengajar ;
     rdf:object ex:web_semantik ;
-    dcterms:creator ex:ida ;
-    dcterms:date "2026-10-01"^^xsd:date ;
-    dcterms:source "Data akademik kampus" .
+    dcterms:creator "Kelompok 05" ;
+    dcterms:date "2026-10-08"^^xsd:date ;
+    dcterms:source "Graf kampus_usu.ttl Pertemuan 6" .
 
-  << ex:ida ex:mengajar ex:web_semantik >> dcterms:creator ex:ida ;
-                                          dcterms:date "2026-10-01"^^xsd:date ;
-                                          dcterms:source "Data akademik kampus" .
+  << ex:isa_dadi ex:mengajar ex:web_semantik >> dcterms:creator "Kelompok 05" ;
+                                          dcterms:date "2026-10-08"^^xsd:date ;
+                                          dcterms:source "Graf kampus_usu.ttl Pertemuan 6" .
 }
 
 

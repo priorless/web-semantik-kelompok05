@@ -1,5 +1,9 @@
 # Pertemuan 7 - Serialisasi RDF
 
+## Artefak
+- Graf asal: 32 triple (39 triple setelah reifikasi)
+- Format ekspor: Turtle, JSON-LD, N-Triples
+- Named graph: `<https://priorless.github.io/web-semantik-kelompok05/graph/kampus>` dan `<https://priorless.github.io/web-semantik-kelompok05/graph/fakultas>`
 
 ## Reifikasi dan provenance
 
