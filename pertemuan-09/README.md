@@ -18,6 +18,32 @@
 - Peran ?mk: Variabel ?mk digunakan untuk menghubungkan pola pertama dan pola kedua. Walaupun tidak ditampilkan pada SELECT, variabel ini tetap digunakan untuk mencocokkan mata kuliah yang diajar oleh dosen dengan nama mata kuliah yang tersedia.
 
 
+## Langkah 2 - ASK dan dunia terbuka
+1. Apa hasil ASK { ex:budi ex:mengajar ex:tif2410 }? Bagaimana tafsir yang tepat menurut asumsi dunia terbuka?
+Hasil query             : FALSE
+Penjelasan & Tafsir OWA :
+Dalam Open World Assumption (OWA) yang digunakan pada Web Semantik, hasil FALSE pada query ASK bukan berarti Pak Budi pasti tidak mengajar TIF2410 secara mutlak di dunia nyata. Hasil FALSE di sini hanya bermakna bahwa kebenaran/triple tersebut saat ini tidak ada/tidak tertulis (unknown/not asserted) di dalam basis data RDF tempat query dijalankan. OWA mengasumsikan pengetahuan di dunia ini tidak terbatas, sehingga ketidakhadiran fakta di dalam graf lokal tidak secara otomatis membuktikan bahwa fakta tersebut salah.
+
+2. Berapa baris hasil SELECT ?a ?b WHERE { ?a ex:mengajar ?mk . ?b ex:mengajar ?mk . }? 
+Mengapa muncul baris dengan ?a sama dengan ?b?
+Jumlah baris hasil akhir: 5 baris
+
+| ?a | ?b | ?mk |
+|-------|--------|-----|
+|
+ex:budi |ex:budi|ex:tif2305|
+|ex:sari|ex:sari|ex:tif2305|
+|ex:sari|ex:budi|ex:tif2305|
+|ex:budi|ex:sari|ex:tif2305|
+|ex:sari|ex:sari|ex:tif2410|
+
+Penyebab munculnya baris ?a sama dengan ?b:
+SPARQL mencocokkan pola (pattern matching) secara independen untuk tiap variabel tanpa asumsi implisit bahwa ?a dan ?b harus menunjuk pada entitas yang berbeda. Karena ex:budi mengajar ex:tif2305, maka triple tersebut cocok untuk ?a ex:mengajar ex:tif2305 sekaligus cocok untuk ?b ex:mengajar ex:tif2305 pada mata kuliah yang sama (?mk yang sama). Jika ingin memastikan ?a dan ?b tidak sama, harus ditambahkan filter eksplisit: FILTER(?a != ?b).
+
+
+3. Pola ?mk ex:nama "Web Semantik" menghasilkan nol baris pada graf yang menulis "Web Semantik"@id. Jelaskan penyebabnya.
+jawab : 
+Pencocokan string pada triple pattern SPARQL bersifat exact matching (mencakup karakter teks, tipe data, dan tag bahasa). Mesin SPARQL memperlakukan datatype atau langTag sebagai bagian integral dari nilai literal tersebut, sehingga "Web Semantik" tidak sama dengan "Web Semantik"@id. Untuk mencocokkannya, query harus menambahkan tag bahasa secara eksplisit (?mk ex:nama "Web Semantik"@id) atau menggunakan pemroses fungsi string seperti FILTER(STR(?nama) = "Web Semantik").
 
 ## Refleksi
 
