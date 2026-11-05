@@ -1,0 +1,20 @@
+# Q2 - Lima sungai terpanjang di Indonesia
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?sungaiLabel ?panjang WHERE {
+  hint:Query hint:optimizer "None" .
+
+  ?sungai wdt:P17 wd:Q252 ;   # P17: country; Q252: Indonesia
+          wdt:P31 wd:Q4022 ;  # P31: instance of; Q4022: river
+          wdt:P2043 ?panjang . # P2043: length
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "id,en".
+  }
+}
+ORDER BY DESC(?panjang)
+LIMIT 5

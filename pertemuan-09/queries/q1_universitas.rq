@@ -1,0 +1,17 @@
+# Q1 - Universitas di Indonesia beserta kota lokasinya
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?univLabel ?kotaLabel WHERE {
+  ?univ wdt:P31 wd:Q3918 ;  # P31: instance of; Q3918: University
+        wdt:P17 wd:Q252 ;   # P17: country; Q252: Indonesia
+        wdt:P131 ?kota .    # P131: located in administrative territorial entity
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "id,en".
+  }
+}
+LIMIT 20

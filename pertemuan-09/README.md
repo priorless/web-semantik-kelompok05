@@ -1,4 +1,3 @@
-
 # Pertemuan 9 - SPARQL Dasar: Tell & Ask dan Endpoint
 
 ## Langkah 1 - Tabel Binding
@@ -27,7 +26,6 @@
 Dalam *Open World Assumption* (OWA) yang digunakan pada Web Semantik, hasil `FALSE` pada query `ASK` bukan berarti Pak Budi pasti tidak mengajar TIF2410 secara mutlak di dunia nyata. Hasil `FALSE` di sini hanya bermakna bahwa kebenaran/triple tersebut saat ini tidak ada/tidak tertulis (unknown/not asserted) di dalam basis data RDF tempat query dijalankan. OWA mengasumsikan pengetahuan di dunia ini tidak terbatas, sehingga ketidakhadiran fakta di dalam graf lokal tidak secara otomatis membuktikan bahwa fakta tersebut salah.
 
 
-
 2. Berapa baris hasil SELECT ?a ?b WHERE { ?a ex:mengajar ?mk . ?b ex:mengajar ?mk . }? Mengapa muncul baris dengan ?a sama dengan ?b?
 
 **Jumlah baris hasil akhir  :** 5 baris
@@ -44,7 +42,6 @@ Dalam *Open World Assumption* (OWA) yang digunakan pada Web Semantik, hasil `FAL
 SPARQL mencocokkan pola (*pattern matching*) secara independen untuk tiap variabel tanpa asumsi implisit bahwa `?a` dan `?b` harus menunjuk pada entitas yang berbeda. Karena `ex:budi` mengajar `ex:tif2305`, maka triple tersebut cocok untuk `?a ex:mengajar ex:tif2305` sekaligus cocok untuk `?b ex:mengajar ex:tif2305` pada mata kuliah yang sama (`?mk` yang sama). Jika ingin memastikan `?a` dan `?b` tidak sama, harus ditambahkan filter eksplisit: `FILTER(?a != ?b)`.
 
 
-
 3. Pola ?mk ex:nama "Web Semantik" menghasilkan nol baris pada graf yang menulis "Web Semantik"@id. Jelaskan penyebabnya.
 
 **Penyebab utama    :**  
@@ -52,6 +49,11 @@ Pada SPARQL dan RDF, literal polos tanpa *language tag* (`"Web Semantik"`) dispe
 
 **Penjelasan detail :**  
 Pencocokan string pada triple pattern SPARQL bersifat *exact matching* (mencakup karakter teks, tipe data, dan tag bahasa). Mesin SPARQL memperlakukan `datatype` atau `langTag` sebagai bagian integral dari nilai literal tersebut, sehingga `"Web Semantik"` != `"Web Semantik"@id`. Untuk mencocokkannya, query harus menambahkan tag bahasa secara eksplisit (`?mk ex:nama "Web Semantik"@id`) atau menggunakan pemroses fungsi string seperti `FILTER(STR(?nama) = "Web Semantik")`.
+
+## Langkah 4 - Wikidata
+- Jumlah baris Q1 dengan wdt:P31: 20 baris, karena menggunakan `LIMIT 20`. Query ini hanya mencari universitas dengan tipe University secara langsung, jika dihitung tanpa `LIMIT` hasilnya sebanyak 1.049 baris.
+- Jumlah baris Q1 dengan wdt:P31/wdt:P279*: 20 baris, karena menggunakan `LIMIT 20`. Query ini juga mencakup kelas turunan dari University, jika dihitung tanpa `LIMIT` hasilnya sebanyak 1.985 baris.
+- Penjelasan perbedaan: Perbedaan kedua query terletak pada cara pencarian tipe universitas. Query pertama hanya mencari data yang memiliki tipe University secara langsung, sedangkan query kedua juga mencari data yang termasuk dalam kelas turunan dari University. Karena pencariannnya lebih luas, query kedua menghasilkan jumlah baris yang lebih banyak, yaitu 1.985 baris dibandingkan 1.049 baris pada query pertama. Jadi, penggunaan `wdt:P31/wdt:P279*` memungkinkan data universitas ditemukan melalui hubungan kelaas trunannya juga.
 
 ## Langkah 5 - Endpoint dari Python
 - **agent=UA**: Mengatur *User-Agent* untuk mengidentifikasi skrip yang melakukan permintaan ke server Wikidata. Ini adalah bentuk etika dalam menggunakan endpoint publik, di mana kita wajib menyertakan nama proyek dan alamat email agar administrator server dapat menghubungi kita jika skrip memberikan beban berlebih atau terjadi masalah.
