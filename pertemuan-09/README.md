@@ -53,6 +53,15 @@ Pada SPARQL dan RDF, literal polos tanpa *language tag* (`"Web Semantik"`) dispe
 **Penjelasan detail :**  
 Pencocokan string pada triple pattern SPARQL bersifat *exact matching* (mencakup karakter teks, tipe data, dan tag bahasa). Mesin SPARQL memperlakukan `datatype` atau `langTag` sebagai bagian integral dari nilai literal tersebut, sehingga `"Web Semantik"` != `"Web Semantik"@id`. Untuk mencocokkannya, query harus menambahkan tag bahasa secara eksplisit (`?mk ex:nama "Web Semantik"@id`) atau menggunakan pemroses fungsi string seperti `FILTER(STR(?nama) = "Web Semantik")`.
 
+## Langkah 5 - Endpoint dari Python
+- **agent=UA**: Mengatur *User-Agent* untuk mengidentifikasi skrip yang melakukan permintaan ke server Wikidata. Ini adalah bentuk etika dalam menggunakan endpoint publik, di mana kita wajib menyertakan nama proyek dan alamat email agar administrator server dapat menghubungi kita jika skrip memberikan beban berlebih atau terjadi masalah.
+- **setReturnFormat(JSON)**: Menginstruksikan endpoint SPARQL untuk mengembalikan hasil query dalam format JSON. Format ini dipilih karena strukturnya lebih mudah diurai (*parse*) dan diolah secara langsung menjadi *dictionary* dan *list* di Python dibandingkan format lain seperti XML.
+- **b.get("kotaLabel", {})**: Mengambil data dari kunci `"kotaLabel"` pada baris hasil query secara aman (*safe access*). Jika kunci tersebut tidak ditemukan (misalnya data kota kosong atau gagal dilabeli), fungsi ini akan mengembalikan *dictionary* kosong `{}` alih-alih menyebabkan error `KeyError` yang dapat menghentikan jalannya program.
+
+### Etika Endpoint Publik
+1. **Selalu pakai LIMIT**: Mencegah query mengambil data berlebihan yang dapat membebani server.
+2. **Isi User-Agent dengan Email**: Sebagai bentuk tanggung jawab dan identitas pengakses data.
+3. **Jangan menjalankan query di dalam loop**: Query cukup dijalankan satu kali, simpan hasilnya ke file (seperti CSV), lalu olah data dari file tersebut untuk pemrosesan selanjutnya.
 ## Refleksi
 
 **1. Di titik mana SPARQL berbeda dari SQL?**
