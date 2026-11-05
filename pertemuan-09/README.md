@@ -22,7 +22,6 @@
 1. Apa hasil ASK { ex:budi ex:mengajar ex:tif2410 }? Bagaimana tafsir yang tepat menurut asumsi dunia terbuka?
 
 Hasil query             : FALSE
-
 Penjelasan & Tafsir OWA :
 Dalam Open World Assumption (OWA) yang digunakan pada Web Semantik, hasil FALSE pada query ASK bukan berarti Pak Budi pasti tidak mengajar TIF2410 secara mutlak di dunia nyata. Hasil FALSE di sini hanya bermakna bahwa kebenaran/triple tersebut saat ini tidak ada/tidak tertulis (unknown/not asserted) di dalam basis data RDF tempat query dijalankan. OWA mengasumsikan pengetahuan di dunia ini tidak terbatas, sehingga ketidakhadiran fakta di dalam graf lokal tidak secara otomatis membuktikan bahwa fakta tersebut salah.
 
@@ -41,7 +40,6 @@ Jumlah baris hasil akhir: 5 baris
         |ex:sari|ex:sari|ex:tif2410|
 
 Penyebab munculnya baris ?a sama dengan ?b :
-
 SPARQL mencocokkan pola (pattern matching) secara independen untuk tiap variabel tanpa asumsi implisit bahwa ?a dan ?b harus menunjuk pada entitas yang berbeda. Karena ex:budi mengajar ex:tif2305, maka triple tersebut cocok untuk ?a ex:mengajar ex:tif2305 sekaligus cocok untuk ?b ex:mengajar ex:tif2305 pada mata kuliah yang sama (?mk yang sama). Jika ingin memastikan ?a dan ?b tidak sama, harus ditambahkan filter eksplisit: FILTER(?a != ?b).
 
 
