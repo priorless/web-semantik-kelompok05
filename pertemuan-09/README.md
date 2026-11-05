@@ -30,8 +30,7 @@ Jumlah baris hasil akhir: 5 baris
 
 | ?a | ?b | ?mk |
 |-------|--------|-----|
-|
-ex:budi |ex:budi|ex:tif2305|
+|ex:budi |ex:budi|ex:tif2305|
 |ex:sari|ex:sari|ex:tif2305|
 |ex:sari|ex:budi|ex:tif2305|
 |ex:budi|ex:sari|ex:tif2305|
