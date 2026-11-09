@@ -1,0 +1,8 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+CONSTRUCT {
+  ?f a dbo:Film .
+}
+WHERE {
+  ?f a dbo:Film .
+}

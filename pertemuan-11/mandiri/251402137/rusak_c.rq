@@ -1,0 +1,9 @@
+
+PREFIX ex: <http://contoh.id/>
+
+CONSTRUCT {
+  ?x a ex:Permukiman .
+}
+WHERE {
+  ?x a ex:Permukiman .
+}
