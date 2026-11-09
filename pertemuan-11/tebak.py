@@ -1,4 +1,3 @@
-
 from rdflib import Graph
 
 g = Graph().parse("peran.ttl", format="turtle")
