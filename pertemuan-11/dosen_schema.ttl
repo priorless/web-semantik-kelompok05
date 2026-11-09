@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> a schema:Person ;
+    schema:name "Isa Dadi"@id .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> a schema:Person ;
+    schema:name "Opim Salim"@id .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> a schema:Person ;
+    schema:name "Umayya"@id .
+
