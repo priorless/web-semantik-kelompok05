@@ -30,7 +30,7 @@
 |-------|-------------|--------|-----------------------------|--------------------------|
 | rusak_a | 0 triple | Tidak ada triple yang dihasilkan. | variabel `?film` pada CONSTRUCT tidak terikat karena WHERE menggunakan `?f`. | 3 triple: Following, Insomnia, dan Memento. |
 | rusak_b | 4 triple | `Christopher Nolan` memiliki dua nama yang berbeda tag bahasanya. | Query mengambil semua nama tanpa memilih satu bahasa untuk setiap orang. | 3 triple, satu nama untuk setiap orang menggunakan VALUES dan FILTER. |
-| rusak_c | 0 triple | Tidak ada individu yang ditemukan sebagai `ex:Permukiman`. | Query hanya mencari tipe langsung `ex:Permukiman`, sedangkan data menggunakan kelas turunannya. | 3 triple: Medan, Surabaya, dan Tomok, menggunakan property path `a/rdfs:subClassOf*``. |
+| rusak_c | 0 triple | Tidak ada individu yang ditemukan sebagai `ex:Permukiman`. | Query hanya mencari tipe langsung `ex:Permukiman`, sedangkan data menggunakan kelas turunannya. | 3 triple: Medan, Surabaya, dan Tomok, menggunakan property path `a/rdfs:subClassOf*`. |
 
 ## Bagian E - Etika dan diskusi
 | Aturan | a_kota_limit.rq | demo_c.py |
@@ -76,7 +76,7 @@ Namun, penggabungan tetap membutuhkan pemeriksaan nilai dan literal. Pada `rusak
 | Pernyataan | Bukti dari tugas ini |
 |------------|----------------------|
 | 1 | Bagian A: LIMIT 10 menghasilkan 30 triple dari 10 solution dengan 3 pola triple. Bagian D-C: Medan hanya muncul satu kali meskipun dapat ditemukan melalui lebih dari satu jalur subclass. |
-| 2 | Bagian D-A: rusak_a.rq menghasilkan 0 triple karena ?film tidak terikat di WHERE. Setelah diperbaiki menjadi ?f, hasilnya 3 triple. |
-| 3 | Bagian D-B: rusak_b.rq menggunakan property path foaf:name|rdfs:label|schema:name untuk mengambil nama dari beberapa predikat. perbaikan_b.rq menggunakan VALUES untuk memilih bahasa nama setiap orang. UNION tidak digunakan secara langsung dalam query yang diuji. |
-| 4 | Bagian A dan C: Query menggunakan wdt:P31/wdt:P279* dan a/rdfs:subClassOf* untuk menelusuri hubungan kelas tanpa menuliskan setiap kelas perantara. Dalam praktikum ini, jalur * digunakan, sedangkan jalur + tidak diuji secara langsung.|
+| 2 | Bagian D-A: `rusak_a.rq` menghasilkan 0 triple karena `?film` tidak terikat di WHERE. Setelah diperbaiki menjadi `?f`, hasilnya 3 triple. |
+| 3 | Bagian D-B: `rusak_b.rq` menggunakan property path `foaf:name`|`rdfs:label`|`schema:name` untuk mengambil nama dari beberapa predikat. `perbaikan_b.rq` menggunakan VALUES dan FILTER untuk memilih bahasa nama setiap orang. UNION tidak digunakan secara langsung dalam query yang diuji. |
+| 4 | Bagian A dan C: Query menggunakan `wdt:P31/wdt:P279*` dan `a/rdfs:subClassOf*` untuk menelusuri hubungan kelas tanpa menuliskan setiap kelas perantara. Dalam praktikum ini, jalur * digunakan, sedangkan jalur + tidak diuji secara langsung.|
 | 5 | Bagian C: Jumlah Person tetap 3 setelah Rina ditambahkan. Setelah materialisasi ulang pada Putaran 2, jumlah Person menjadi 4. |
