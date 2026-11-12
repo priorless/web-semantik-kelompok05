@@ -3,10 +3,11 @@
 ## Langkah 1 - Solution menjadi triple
 | Solution | ?d | ?mk | Triple yang dicetak |
 |----------|----|-----|---------------------|
-| 1    | ex:budi | ex:tif2108 | ex:tif2108 a ex:MataKuliahAktif; ex:tif2108 ex:diampuOleh ex:budi          |
-| 2    | ex:budi | ex:tif2104 | ex:tif2104 a ex:MataKuliahAktif; ex:tif2104 ex:diampuOleh ex:budi          |
-| 3    | ex:sari | ex:tif2108 | ex:tif2108 a ex:MataKuliahAktif; ex:tif2108 ex:diampuOleh ex:sari          |
-| 4    | ex:ida  | ex:tif2104 | ex:tif2104 a ex:MataKuliahAktif; ex:tif2104 ex:diampuOleh ex:ida           |
+| 1    | ex:budi | ex:tif2108 | ex:tif2108 a ex:MataKuliahAktif .
+ex:tif2108 ex:diampuOleh ex:budi  .   |
+| 2    | ex:budi | ex:tif2104 | ex:tif2104 a ex:MataKuliahAktif; ex:tif2104 ex:diampuOleh ex:budi     |
+| 3    | ex:sari | ex:tif2108 | ex:tif2108 a ex:MataKuliahAktif; ex:tif2108 ex:diampuOleh ex:sari     |
+| 4    | ex:ida  | ex:tif2104 | ex:tif2104 a ex:MataKuliahAktif; ex:tif2104 ex:diampuOleh ex:ida      |
 - Jumlah solution: [4]
 - Jumlah cetakan triple: [8]
 - Jumlah triple di graf hasil: [6]
