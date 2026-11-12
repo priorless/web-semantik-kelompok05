@@ -1,0 +1,12 @@
+CONSTRUCT { ?o ex:nama ?n . }
+WHERE {
+  VALUES (?o ?bahasa) {
+    (dbr:Christopher_Nolan "en")
+    (dbr:Joko_Anwar "id")
+    (dbr:Mira_Lesmana "")
+  }
+
+  ?o foaf:name|rdfs:label|schema:name ?n .
+
+  FILTER (LANG(?n) = ?bahasa)
+}
