@@ -17,6 +17,17 @@
 - Triple asli vs triple turunan: Dari isi `kampus_usu_v4.ttl` saja **tidak bisa** dibedakan. Setelah `g.add()`, triple turunan bercampur dengan triple asli dalam satu graf, dan Turtle tidak menyimpan asal-usul triple. Misalnya pada `ex:isa_dadi`, tiga tipe tertulis berdampingan (`a foaf:Person, ex:Lecturer, ex:Pegawai`) tanpa penanda mana yang asli (`ex:Lecturer`) dan mana yang turunan (`ex:Pegawai`, `foaf:Person`). Namun, pembedaan **bisa dilakukan dengan membandingkan versi**: hasil `v4 - v2` menunjukkan selisih 8 triple (v2: 34, v4: 42), yaitu 6 triple turunan (`a ex:Pegawai` dan `a foaf:Person` untuk tiga dosen) dan 2 triple `rdfs:subClassOf` dari `INSERT DATA`. Jadi asal-usul triple harus dilacak dari luar berkas, misalnya lewat perbandingan versi atau named graph.
 - Dosen baru setelah program selesai: Dosen baru **tidak otomatis** menjadi `ex:Pegawai` atau `foaf:Person`. Materialisasi adalah snapshot: triple turunan dihitung sekali lalu disimpan sebagai fakta biasa. Dosen baru hanya punya `a ex:Lecturer`, sehingga program harus dijalankan ulang agar triple turunannya dibuat. Kelebihan materialisasi: query cepat dan sederhana tanpa property path. Kekurangannya: data bisa basi dan ukuran berkas bertambah. Alternatifnya, hierarki dihitung saat query dengan `a/rdfs:subClassOf*`, yang selalu mutakhir tetapi lebih lambat.
 
+## Langkah 4 - Wikidata
+Jumlah triple Q6: 150 triple (asumsi query mengembalikan 50 baris data, karena setiap baris menghasilkan 3 triple).
+Jumlah baris Q6 versi SELECT: 50 baris (sesuai dengan LIMIT 50).
+Penjelasan perbedaan: Pada query CONSTRUCT, setiap 1 baris hasil pemetaan variabel (?univ, ?nama, ?kota) akan dipecah dan dibuatkan menjadi 3 triple RDF baru, yaitu: ?univ a ex:Universitas, ?univ ex:nama ?nama, dan ?univ ex:lokasi ?kota. Sedangkan pada query SELECT, hasilnya hanya ditampilkan dalam bentuk tabel baris dan kolom tanpa membuat triple baru. Oleh karena itu, jumlah triple pada CONSTRUCT selalu sama dengan 3 × jumlah baris pada SELECT.
+Q7 dengan + vs *:
+wdt:P279+ (satu atau lebih): Mencari semua subkelas dari "universitas" (wd:Q3918) secara transitif (anak, cucu, cicit, dst.), tetapi tidak menyertakan entitas "universitas" (wd:Q3918) itu sendiri.
+wdt:P279* (nol atau lebih): Mencari semua subkelas secara transitif dan bersifat refleksif, sehingga entitas "universitas" (wd:Q3918) itu sendiri juga ikut muncul di dalam hasil query.
+Kelas yang mengejutkan dan alasannya:
+Kelas: wd:Q30716008 (coast guard academy / akademi penjaga pantai) atau wd:Q42058997 (naval academy / akademi angkatan laut).
+Alasan: Secara awam, universitas sering diasosiasikan dengan institusi pendidikan tinggi umum/sekuler. Akademi militer atau penjaga pantai lebih sering dianggap sebagai tempat pelatihan fisik dan taktis ketentaraan. Namun, secara ontologi di Wikidata, banyak akademi militer modern yang memiliki kurikulum akademik terakreditasi penuh dan berhak memberikan gelar Sarjana (S1) atau Magister (S2). Karena fungsi utamanya mencakup pemberian gelar pendidikan tinggi, secara hierarkis entitas ini sah diklasifikasikan sebagai subkelas dari "universitas".
+
 ## Refleksi
 
 **1. Mengapa jumlah triple hasil CONSTRUCT bisa lebih kecil dari jumlah baris SELECT dengan WHERE yang sama?**
