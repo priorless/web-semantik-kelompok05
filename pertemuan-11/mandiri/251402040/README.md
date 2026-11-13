@@ -26,10 +26,9 @@ Triple turunan disimpan terpisah: 6]
 ## Bagian D - Diagnosis
 | Query | Hasil mesin | Gejala | Penyebab (baris yang salah) | Hasil setelah diperbaiki |
 |-------|-------------|--------|-----------------------------|--------------------------|
-| rusak_a | [0 triple] | [ketidaksesuaian nama variabel.] | [?f dbo:director dbr:Christopher_Nolan ;
-   rdfs:label ?j .] | [3 triple] |
-| rusak_b | [4 triple] | [Dua nilai yang tampak sama] | [?o foaf:name|rdfs:label|schema:name ?n .] | [3 triple] |
-| rusak_c | [0 triple] | [Superkelas tidak ditemukan.] | [3 triple] |
+| rusak_a | 0 triple | [ketidaksesuaian nama variabel.] | ?f dbo:director dbr:Christopher_Nolan ; rdfs:label ?j . | 3 triple |
+| rusak_b | 4 triple | Dua nilai yang tampak sama | ?o foaf:name rdfs:label schema:name ?n . | 3 triple |
+| rusak_c | 0 triple | Superkelas tidak ditemukan. |3 triple |
 
 ## Bagian E - Etika dan diskusi
 | Aturan | a_kota_limit.rq | demo_c.py |
@@ -38,13 +37,14 @@ Triple turunan disimpan terpisah: 6]
 | 2 LIMIT | [Ada LIMIT 10] | [Tidak ada] |
 | 3 Simpan, jangan ulangi | [Tidak menyimpan graf] | [Menyimpan ke film_nolan.ttl] |
 | 4 Jangkar jalur | [Ada wd:Q515 dan wd:Q252] | [Tidak menggunakan property path] |
-- Versi yang melanggar aturan 4 (tidak dijalankan) dan alasannya: [CONSTRUCT {
+- Versi yang melanggar aturan 4 (tidak dijalankan) dan alasannya: CONSTRUCT {
   ?x a ex:Kota .
 }
 WHERE {
   ?x a/rdfs:subClassOf* ?y .
 }
-query tanpa jangkar akan memaksa endpoint menelusuri seluruh kemungkinan hierarki subkelas di seluruh database yang sangat membebani server.]
+
+query tanpa jangkar akan memaksa endpoint menelusuri seluruh kemungkinan hierarki subkelas di seluruh database yang sangat membebani server.
 
 ### Diskusi 1 - Taksonomi berubah
 Ketika tim menyimpan hasil materialisasi langsung ke dalam graf produksi secara permanen seperti pada Demo D (yang menghasilkan kampus_v4.ttl), kita secara otomatis mencampuradukkan data asli (fakta dasar) dengan data hasil inferensi (kesimpulan turunan). Jika setahun kemudian taksonomi berubah—misalnya, entitas ex:Dosen tidak lagi didefinisikan sebagai subkelas dari foaf:Person—maka triple turunan seperti [http://contoh.id/kampus/rina](http://contoh.id/kampus/rina) a foaf:Person akan menjadi salah dan tidak valid lagi di dalam sistem.
@@ -63,6 +63,6 @@ Sebaliknya, untuk skenario menggabungkan data kota dari tiga sumber (endpoint) y
 |------------|----------------------|
 | 1. CONSTRUCT mencetak template sekali per solution dan menggabungkan triple kembar | [Bagian A] |
 | 2. Variabel tak terikat tidak dicetak tanpa error | [Bagian D, rusak_a] |
-| 3. UNION, jalur |, dan VALUES menyatukan predikat berbeda | [Bagian D, rusak_b] |
+| 3. UNION, jalur, dan VALUES menyatukan predikat berbeda | [Bagian D, rusak_b] |
 | 4. Jalur + dan * menelusuri hierarki | [Bagian C dan D] |
 | 5. Materialisasi menyimpan kesimpulan tetapi harus dihitung ulang | [Bagian C] |
