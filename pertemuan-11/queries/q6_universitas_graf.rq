@@ -1,5 +1,5 @@
 # Q6 - universitas di Indonesia sebagai graf (jalankan di query.wikidata.org)
-PREFIX ex: <https://contoh.github.io/web-semantik/251402087/kampus#>;
+PREFIX ex: <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#>
 CONSTRUCT {
   ?univ a ex:Universitas ;
         ex:nama ?nama ;

@@ -40,6 +40,20 @@ Kelas yang mengejutkan dan alasannya:
 Kelas: wd:Q30716008 (coast guard academy / akademi penjaga pantai) atau wd:Q42058997 (naval academy / akademi angkatan laut).
 Alasan: Secara awam, universitas sering diasosiasikan dengan institusi pendidikan tinggi umum/sekuler. Akademi militer atau penjaga pantai lebih sering dianggap sebagai tempat pelatihan fisik dan taktis ketentaraan. Namun, secara ontologi di Wikidata, banyak akademi militer modern yang memiliki kurikulum akademik terakreditasi penuh dan berhak memberikan gelar Sarjana (S1) atau Magister (S2). Karena fungsi utamanya mencakup pemberian gelar pendidikan tinggi, secara hierarkis entitas ini sah diklasifikasikan sebagai subkelas dari "universitas".
 
+## Langkah 5 - Graf dari Python
+- Jumlah triple universitas.ttl: [138 triple] 44 triple tipe ex:Universitas
+44 triple ex:nama
+50 triple ex:lokasi
+- Jumlah baris universitas_per_kota.csv: [42 baris]
+Total universitas: 50
+Kota dengan 4 universitas: 1
+Kota dengan 2 universitas: 5
+Kota dengan 1 universitas: 36
+Tidak ada kota duplikat atau kolom kosong.
+- setReturnFormat(TURTLE): setReturnFormat(TURTLE) digunakan untuk menentukan format hasil query dari Wikidata, yaitu Turtle.
+- Graph().parse(data=...): digunakan untuk membaca hasil query dan mengubahnya menjadi graf RDF menggunakan RDFLib.
+- Mengapa q_kota tidak memanggil endpoint: q_kota tidak lagi mengirim permintaan ke endpoint Wikidata karena query dijalankan langsung pada graf lokal yang sudah disimpan dalam variabel g, sehingga tidak perlu mengambil data kembali dari Wikidata.
+
 ## Refleksi
 
 **1. Mengapa jumlah triple hasil CONSTRUCT bisa lebih kecil dari jumlah baris SELECT dengan WHERE yang sama?**
