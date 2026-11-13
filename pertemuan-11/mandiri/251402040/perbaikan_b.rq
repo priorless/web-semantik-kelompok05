@@ -1,0 +1,11 @@
+CONSTRUCT {
+  ?o ex:nama ?n .
+}
+WHERE {
+  VALUES (?o ?p) {
+    (dbr:Christopher_Nolan foaf:name)
+    (dbr:Joko_Anwar rdfs:label)
+    (dbr:Mira_Lesmana schema:name)
+  }
+  ?o ?p ?n .
+}
