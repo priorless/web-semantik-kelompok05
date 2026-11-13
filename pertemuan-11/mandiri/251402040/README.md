@@ -26,17 +26,17 @@ Triple turunan disimpan terpisah: 6]
 ## Bagian D - Diagnosis
 | Query | Hasil mesin | Gejala | Penyebab (baris yang salah) | Hasil setelah diperbaiki |
 |-------|-------------|--------|-----------------------------|--------------------------|
-| rusak_a | 0 triple | [ketidaksesuaian nama variabel.] | ?f dbo:director dbr:Christopher_Nolan ; rdfs:label ?j . | 3 triple |
+| rusak_a | 0 triple | ketidaksesuaian nama variabel. | ?f dbo:director dbr:Christopher_Nolan ; rdfs:label ?j . | 3 triple |
 | rusak_b | 4 triple | Dua nilai yang tampak sama | ?o foaf:name rdfs:label schema:name ?n . | 3 triple |
-| rusak_c | 0 triple | Superkelas tidak ditemukan. |3 triple |
+| rusak_c | 0 triple | Superkelas tidak ditemukan. |?x a ex:Permukiman .| 3 triple |
 
 ## Bagian E - Etika dan diskusi
 | Aturan | a_kota_limit.rq | demo_c.py |
 |--------|-----------------|-----------|
-| 1 User-Agent | [Tidak ada] | [Ada pada baris UA] |
-| 2 LIMIT | [Ada LIMIT 10] | [Tidak ada] |
-| 3 Simpan, jangan ulangi | [Tidak menyimpan graf] | [Menyimpan ke film_nolan.ttl] |
-| 4 Jangkar jalur | [Ada wd:Q515 dan wd:Q252] | [Tidak menggunakan property path] |
+| 1 User-Agent | Tidak ada | Ada pada baris UA |
+| 2 LIMIT | Ada LIMIT 10 | Tidak ada |
+| 3 Simpan, jangan ulangi | Tidak menyimpan graf | Menyimpan ke film_nolan.ttl |
+| 4 Jangkar jalur | Ada wd:Q515 dan wd:Q252 | Tidak menggunakan property path |
 - Versi yang melanggar aturan 4 (tidak dijalankan) dan alasannya: CONSTRUCT {
   ?x a ex:Kota .
 }
