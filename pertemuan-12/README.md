@@ -1,5 +1,25 @@
 # Pertemuan 12 - Inferensi dan Reasoning
 
+## Langkah 1 - Closure dengan tangan
+| # | Triple turunan | Aturan | Premis |
+|---|----------------|--------|--------|
+| 1 | `ex:budi a ex:Dosen` | rdfs2 | `ex:membimbing rdfs:domain ex:Dosen` + `ex:budi ex:membimbing ex:andi` |
+| 2 | `ex:andi a ex:Mahasiswa` | rdfs3 | `ex:membimbing rdfs:range ex:Mahasiswa` + `ex:budi ex:membimbing ex:andi` |
+| 3 | `ex:budi ex:mengenal ex:andi` | rdfs7 | `ex:membimbing rdfs:subPropertyOf ex:mengenal` + `ex:budi ex:membimbing ex:andi` |
+| 4 | `ex:sari a ex:Dosen` | rdfs9 | `ex:DosenTamu rdfs:subClassOf ex:Dosen` + `ex:sari a ex:DosenTamu` |
+| 5 | `ex:DosenTamu rdfs:subClassOf ex:Pegawai` | rdfs11 | `ex:DosenTamu rdfs:subClassOf ex:Dosen` + `ex:Dosen rdfs:subClassOf ex:Pegawai` |
+| 6 | `ex:Dosen rdfs:subClassOf ex:Orang` | rdfs11 | `ex:Dosen rdfs:subClassOf ex:Pegawai` + `ex:Pegawai rdfs:subClassOf ex:Orang` |
+| 7 | `ex:budi a ex:Pegawai` | rdfs9 | `ex:Dosen rdfs:subClassOf ex:Pegawai` + #1 |
+| 8 | `ex:budi a ex:Orang` | rdfs9 | #6 + #1 (alternatif: `ex:Pegawai rdfs:subClassOf ex:Orang` + #7) |
+| 9 | `ex:andi a ex:Orang` | rdfs9 | `ex:Mahasiswa rdfs:subClassOf ex:Orang` + #2 |
+| 10 | `ex:sari a ex:Pegawai` | rdfs9 | `ex:Dosen rdfs:subClassOf ex:Pegawai` + #4 (alternatif: #5 + `ex:sari a ex:DosenTamu`) |
+| 11 | `ex:sari a ex:Orang` | rdfs9 | #6 + #4 (alternatif: `ex:Pegawai rdfs:subClassOf ex:Orang` + #10) |
+| 12 | `ex:DosenTamu rdfs:subClassOf ex:Orang` | rdfs11 | `ex:DosenTamu rdfs:subClassOf ex:Dosen` + #6 |
+
+- Jumlah triple turunan bermakna: **12**, yaitu 8 triple `rdf:type` (#1, #2, #4, #7–#11), 1 triple `ex:mengenal` (#3), dan 3 triple `rdfs:subClassOf` hasil transitivitas (#5, #6, #12). Triple umum seperti `x a rdfs:Resource`, `p a rdf:Property`, `C a rdfs:Class`, dan triple refleksif tidak dihitung.
+- Triple yang baru ditemukan di putaran kedua: #7 `ex:budi a ex:Pegawai`, #8 `ex:budi a ex:Orang`, #9 `ex:andi a ex:Orang`, #10 `ex:sari a ex:Pegawai`, #11 `ex:sari a ex:Orang`, dan #12 `ex:DosenTamu rdfs:subClassOf ex:Orang`. Semuanya membutuhkan premis hasil putaran pertama. Contohnya, `ex:andi a ex:Orang` baru muncul setelah rdfs3 menghasilkan `ex:andi a ex:Mahasiswa`, lalu hasil itu dipakai rdfs9. Putaran ketiga tidak menghasilkan triple baru, jadi closure sudah tercapai.
+- Triple asserted yang tidak menurunkan apa pun, dan alasannya: `ex:andi a ex:MahasiswaBerprestasi`. Di data tidak ada triple `ex:MahasiswaBerprestasi rdfs:subClassOf ...`, jadi rdfs9 tidak punya premis pasangannya. Reasoner tidak menebak dari nama kelas, sehingga `MahasiswaBerprestasi` tidak dianggap subkelas `ex:Mahasiswa`. Andi menjadi `ex:Mahasiswa` hanya karena range `ex:membimbing` (#2). Triple turunan #3 (`ex:budi ex:mengenal ex:andi`) juga tidak menurunkan apa-apa lagi karena `ex:mengenal` tidak punya domain, range, atau superproperti.
+
 
 ## Langkah 2 - Tebak lalu cek
 
