@@ -1,5 +1,32 @@
 # Pertemuan 12 - Inferensi dan Reasoning
 
+
+## Langkah 2 - Tebak lalu cek
+
+| Soal | Profil | Tebakan | Hasil mesin | Penjelasan bila meleset |
+|------|--------|---------|-------------|-------------------------|
+| A | RDFS | 3 baris | 3 baris | Tebakan sesuai dengan hasil mesin. |
+| B | OWL RL | 10 baris | 10 baris | Tebakan sesuai dengan hasil mesin. |
+| C | RDFS | 0 baris | 0 baris | Tebakan sesuai dengan hasil mesin. |
+| C | OWL RL | 1 baris | 1 baris | Tebakan sesuai dengan hasil mesin. |
+| D | OWL RL | False | False | Tebakan sesuai dengan hasil mesin. |
+
+### Penjelasan Hasil
+
+- **A:** Terdapat 3 individu yang termasuk kelas Orang, yaitu Budi, Sari, dan Andi. Budi menjadi Dosen melalui domain properti membimbing, Sari menjadi Dosen melalui hierarki subkelas DosenTamu, sedangkan Andi menjadi Mahasiswa melalui range properti membimbing. Ketiganya kemudian dapat disimpulkan sebagai Orang.
+
+- **B:** Terdapat 10 hubungan beradaDi karena properti tersebut memiliki sifat transitif. Dari 5 lokasi yang saling terhubung, reasoner dapat menurunkan hubungan langsung maupun tidak langsung.
+
+- **C (RDFS):** Hasilnya 0 baris karena profil RDFS tidak mengenali owl:inverseOf. Oleh karena itu, hubungan dibimbing tidak dapat diturunkan.
+
+- **C (OWL RL):** Hasilnya 1 baris karena OWL RL mengenali owl:inverseOf. Dari triple Budi membimbing Andi, reasoner menurunkan triple Andi dibimbing Budi.
+
+- **D:** Hasilnya False karena tidak terdapat informasi yang membuktikan bahwa Medan merupakan anggota kelas Tempat. Berdasarkan prinsip dunia terbuka, informasi yang tidak ditemukan tidak otomatis dianggap salah.
+
+### Kesimpulan
+
+Seluruh tebakan pada latihan ini sesuai dengan hasil yang diperoleh dari program Python. Perbedaan profil RDFS dan OWL RL terlihat pada kemampuan OWL RL dalam menggunakan aksioma OWL, seperti owl:inverseOf dan owl:TransitiveProperty.
+
 ## Langkah 4 - Wikidata
 - ?n Q8 / Q9: 877 / 1343
 - Penyebab selisih: Q8 hanya menghitung entitas yang statement `P31`-nya langsung menunjuk ke `Q3918` (universitas), sehingga hasilnya 877. Banyak universitas di Wikidata dicatat dengan kelas yang lebih spesifik, misalnya politeknik, universitas swasta, dan universitas negeri, yang baru terhubung ke `Q3918` lewat rantai `P279` (*subclass of*).
