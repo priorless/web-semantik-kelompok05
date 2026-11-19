@@ -47,6 +47,27 @@
 
 Seluruh tebakan pada latihan ini sesuai dengan hasil yang diperoleh dari program Python. Perbedaan profil RDFS dan OWL RL terlihat pada kemampuan OWL RL dalam menggunakan aksioma OWL, seperti owl:inverseOf dan owl:TransitiveProperty.
 
+## Langkah 3 - Reasoner pada graf kampus
+
+- **Berkas sumber dan IRI dasar graf:**  
+  `../pertemuan-09/kampus_usu_v2.ttl` |  
+  `https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#`
+
+- **Statistik Graf:**  
+  Asserted: **38** | Closure: **99** | Inferred: **61** | Bermakna: **8**
+
+- **Triple di v4 yang tidak ada di asserted:**  
+  **6** triple (merupakan hasil materialisasi hierarki kelas dari Pertemuan 11).
+
+- **Turunan yang muncul karena domain dan range `ex:mengajar`:**  
+  Berdasarkan isi `kampus_usu_inferred.ttl`, aturan domain dan range menghasilkan turunan berikut:
+  1.  **Range (`rdfs:range ex:Course`)**: Individu `ex:mk_baru_pertemuan09` yang sebelumnya hanya memiliki properti nama, kini otomatis mendapatkan tipe `rdf:type ex:Course` karena menjadi objek dari properti `ex:mengajar`.
+  2.  **Domain (`rdfs:domain ex:Lecturer`)**: Ketiga dosen (`isa_dadi`, `opim_salim`, `umaya`) yang menggunakan properti `ex:mengajar` secara implisit bertipe `ex:Lecturer`. Melalui rantai subclass (`Lecturer ⊑ Pegawai ⊑ foaf:Person`), reasoner juga menurunkan triple `a ex:Pegawai` dan `a foaf:Person` untuk ketiganya.
+  3.  **Transitivitas**: Muncul triple `ex:Lecturer rdfs:subClassOf foaf:Person` sebagai hasil inferensi transitif dari hierarki kelas yang didefinisikan.
+
+- **Bila menambah dosen baru:**  
+  Cukup menambahkan fakta asserted (data mentah) dosen baru ke dalam berkas sumber `kampus_usu_v2.ttl` (contoh: `ex:dosenBaru ex:mengajar ex:mkBaru .`). Setelah itu, jalankan ulang skrip `reasoner_lokal.py`. Reasoner akan menghitung ulang *closure* dan menghasilkan semua triple turunan (tipe Lecturer, Pegawai, Person, Course) secara otomatis tanpa perlu penulisan manual, berbeda dengan pendekatan materialisasi statis di Pertemuan 11.
+  
 ## Langkah 4 - Wikidata
 - ?n Q8 / Q9: 877 / 1343
 - Penyebab selisih: Q8 hanya menghitung entitas yang statement `P31`-nya langsung menunjuk ke `Q3918` (universitas), sehingga hasilnya 877. Banyak universitas di Wikidata dicatat dengan kelas yang lebih spesifik, misalnya politeknik, universitas swasta, dan universitas negeri, yang baru terhubung ke `Q3918` lewat rantai `P279` (*subclass of*).

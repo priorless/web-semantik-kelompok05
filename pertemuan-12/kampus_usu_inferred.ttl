@@ -1,0 +1,16 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Lecturer> rdfs:subClassOf foaf:Person .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#isa_dadi> a foaf:Person,
+        <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Pegawai> .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#mk_baru_pertemuan09> a <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Course> .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#opim_salim> a foaf:Person,
+        <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Pegawai> .
+
+<https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#umaya> a foaf:Person,
+        <https://priorless.github.io/web-semantik-kelompok05/251402087/kampus#Pegawai> .
+
