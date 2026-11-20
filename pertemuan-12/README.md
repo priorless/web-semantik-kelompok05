@@ -81,3 +81,27 @@ Seluruh tebakan pada latihan ini sesuai dengan hasil yang diperoleh dari program
   - Bukan penalaran otomatis, karena tanpa `/wdt:P279*` Q8 tidak menalar sama sekali.
   - Yang terjadi adalah penelusuran jalur (*property path*) saat query dijalankan. Aturan `rdfs9` (instance dari subkelas juga instance dari superkelasnya) ditulis sendiri oleh penulis query dalam bentuk `P31/P279*`, lalu dievaluasi oleh mesin query.
   - Jadi yang menjalankan `rdfs9` di Q9 adalah saya lewat pola query, bukan sebuah reasoner.
+
+
+  ## Langkah 5 - Konsistensi
+
+- **Pesan galat RDFS / OWL RL:** Pada kondisi sebelum perbaikan, RDFS menghasilkan 0 pesan galat, sedangkan OWL RL menghasilkan 2 pesan galat.
+- **Individu yang disebut pesan:** `isa_dadi` dan `web_semantik`. Keduanya terdeteksi sebagai individu yang termasuk dalam kelas `Pegawai` sekaligus `Course`, padahal kedua kelas tersebut telah dinyatakan saling terpisah menggunakan `owl:disjointWith`.
+- **Setelah baris terbalik dihapus:** RDFS menghasilkan 0 pesan galat dan OWL RL juga menghasilkan 0 pesan galat.
+- **Isi `laporan_kelas.csv` sebelum dan sesudah:**
+  
+  Sebelum perbaikan:
+  | kelas | asserted | rdfs | owl_rl |
+  |---|---:|---:|---:|
+  | Lecturer | 3 | 4 | 4 |
+  | Pegawai | 0 | 4 | 4 |
+  | Course | 3 | 5 | 5 |
+
+  Sesudah perbaikan:
+  | kelas | asserted | rdfs | owl_rl |
+  |---|---:|---:|---:|
+  | Lecturer | 3 | 3 | 3 |
+  | Pegawai | 0 | 3 | 3 |
+  | Course | 3 | 4 | 4 |
+
+- **Dari mana dosen menjadi mata kuliah:** Hal ini terjadi karena properti `mengajar` memiliki `rdfs:range ex:Course`. Ketika terdapat triple yang menyatakan seorang dosen sebagai objek dari properti `mengajar`, reasoner menyimpulkan bahwa dosen tersebut merupakan anggota kelas `Course`. Selain itu, `rdfs:domain ex:Lecturer` membuat subjek dari properti `mengajar` disimpulkan sebagai `Lecturer`. Karena `Lecturer` merupakan subclass dari `Pegawai`, individu tersebut juga disimpulkan sebagai `Pegawai`.
